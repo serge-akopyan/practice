@@ -1,0 +1,48 @@
+.logo {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: -190px;
+    left: 175px;
+
+}
+.navigation {
+    position: absolute; 
+    left: 561px;
+    top: 45px;
+}
+
+.nav_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+.nav_li {
+    float: left;
+    font-family: 'Gentium Book Basic', serif;
+  }
+  
+.nav_li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 32px;
+    text-decoration: none;
+  }
+  
+.header {
+    position: static;
+    height: 105px;
+    width: 1600px;
+    background-color: black;
+}
+
+
+.main {
+    position: static;
+    height: auto;
+    width: 1600px;
+    background-color: white;
+}
