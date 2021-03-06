@@ -15,7 +15,7 @@
     <header class="header">
         <section class="header_top">
             <h1>Lambda restaurant (hide)</h1>
-            <img src="./img/logo.png" alt="Logo" class="logo">
+            <img src="./img/logo.png" alt="restaurant logo" class="logo">
         <nav class="navigation">
             <ul class="nav_ul">
                 <li class="nav_li"><a href="#">Home</a></li>
@@ -26,9 +26,9 @@
                 <li class="nav_li"><a href="#">Reservations</a></li>
             </ul>
             <ul class="social_ul">
-                <li class="social_li"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li class="social_li"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                <li class="social_li"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="social_li"><a href="#" aria-label="Twitter link"><i class="fab fa-twitter"></i></a></li>
+                <li class="social_li"><a href="#" aria-label="Youtube link"><i class="fab fa-youtube"></i></a></li>
+                <li class="social_li"><a href="#" aria-label="Facebook link"><i class="fab fa-facebook-f"></i></a></li>
             </ul>
         </nav>
         </section>
@@ -41,7 +41,7 @@
         </section>
     </header>
     <main class="main">
-        <section>
+        <section role="about the restaurant">
             <h2>Just the right food</h2>
             <p>
                 If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
@@ -51,8 +51,7 @@
             <img src="#" alt="chef">
             <img src="#" alt="dish">
         </section>
-
-        <section>
+        <section role="about the ingredients">
             <h2>Fine ingredients</h2>
             <p>
                 If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
@@ -65,8 +64,7 @@
                 <li><img src="#" alt="random3"></li>
             </ul>
         </section>
-
-        <section>
+        <section role="restaurant menu">
             <h2>Menu (hide)</h2>
             <table>
                 <tr><th>Appetisers</th></tr>
@@ -113,7 +111,7 @@
                 <tr><td>Refreshing traditional cucumber and garlic youghurt dip.</td></tr>
             </table>
         </section>
-        <section>
+        <section role="guest reviews">
             <h2> Guest Reviews</h2>
             <p>
                 If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
@@ -122,9 +120,43 @@
             </p>
             <span>-food inc, New York</span>
         </section>
+        <section role="about the food">
+            <ul>
+                <li><img src="#" alt="food"></li>
+                <li><img src="#" alt="food"></li>
+            </ul>
+            <h2>Just the right food</h2>
+            <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
+                Perfect materials and freshly baked food.
+                Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! 
+                Perfect materials and freshly baked food.
+            </p>
+            <form action="#" role="book a table">
+                <table aria-hidden="true">
+                    <tr>
+                        <th><label for="your name">Name</label></th>
+                        <td><input type="text" placeholder="your name*" id="your name"></td>
+                        <th><label for="your email">Name</label></th>
+                        <td><input type="text" placeholder="your email*" id="your email"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="date">Date</label></th>
+                        <td><input type="date" name="date" id="date"></td>
+                        <th><label for="party number">Party number</label></th>
+                        <td>
+                            <select name="party number" id="party number">
+                                <option value="" disabled selected>Party number</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <button type="submit">Book now!</button>
+            </form>
+        </section>
     </main>
-    <footer> 
-        <ul>
+    <footer>
             <li>
                 <ul>
                     <li>About US</li>
