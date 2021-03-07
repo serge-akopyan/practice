@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <title>LAMBDA restaurant</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
         <section class="header_top">
             <h1>Lambda restaurant (hide)</h1>
             <img src="./img/logo.png" alt="restaurant logo" class="logo">
-        <nav class="navigation">
+        <nav class="navigation"  aria-label="website navigation">
             <ul class="nav_ul">
                 <li class="nav_li"><a href="#">Home</a></li>
                 <li class="nav_li"><a href="#">About</a></li>
@@ -35,23 +35,23 @@
         <section class="header_bottom">
             <h2>the right ingredients for the right food</h2>
             <ul class="booking">
-                <li class="booking_li"><a href="#">Book a table</a></li>
+                <li class="booking_li"><a href="#" accesskey="b">Book a table</a></li>
                 <li class="booking_li"><a href="#">See the menui</a></li>
             </ul>
         </section>
     </header>
     <main class="main">
-        <section role="about the restaurant">
+        <section aria-label="about the restaurant">
             <h2>Just the right food</h2>
             <p>
                 If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
                 Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, 
                 and gourmet coffees make us hard to resist! Stop in today and check us out!
             </p>
-            <img src="#" alt="chef">
-            <img src="#" alt="dish">
+            <img src="#" alt="picture of a chef">
+            <img src="#" alt="picture of a dish">
         </section>
-        <section role="about the ingredients">
+        <section aria-label="about the ingredients">
             <h2>Fine ingredients</h2>
             <p>
                 If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
@@ -59,20 +59,20 @@
                 Stop in today and check us out!
             </p>
             <ul>
-                <li><img src="#" alt="random1"></li>
-                <li><img src="#" alt="random2"></li>
-                <li><img src="#" alt="random3"></li>
+                <li><img src="#" alt="picture of a millet"></li>
+                <li><img src="#" alt="picture of spices"></li>
+                <li><img src="#" alt="picure of a bread"></li>
             </ul>
         </section>
-        <section role="restaurant menu">
+        <section aria-label="restaurant menu">
             <h2>Menu (hide)</h2>
-            <table>
+            <table role="menu" aria-label="Appetisers">
                 <tr><th>Appetisers</th></tr>
                 <tr><td>Tzatsiki</td></tr>
                 <tr><td>$3.99</td></tr>
                 <tr><td>Refreshing traditional cucumber and garlic youghurt dip</td></tr>
             </table>
-            <table>
+            <table role="menu" aria-label="Salads">
                 <tr><th>Salads</th></tr>
                 <tr><td>Olive Special</td></tr>
                 <tr><td>$5.99</td></tr>
@@ -85,7 +85,7 @@
                 <tr><td>$5.25</td></tr>
                 <tr><td>Pureed eggplant, garlic, green peppr and tomato dip.</td></tr>
             </table>
-            <table>
+            <table role="menu" aria-label="Starters">
                 <tr><th>Starters</th></tr>
                 <tr><td>Halouml</td></tr>
                 <tr><td>$3.99</td></tr>
@@ -94,7 +94,7 @@
                 <tr><td>$5.50</td></tr>
                 <tr><td>.Pureed eggplant, garlic, green pepper and tomato dip.</td></tr>
             </table>
-            <table>
+            <table role="menu" aria-label="Main Dishes">
                 <tr><th>Main Dishes</th></tr>
                 <tr><td>Cornish Mackerel</td></tr>
                 <tr><td>$5.99</td></tr>
@@ -111,19 +111,19 @@
                 <tr><td>Refreshing traditional cucumber and garlic youghurt dip.</td></tr>
             </table>
         </section>
-        <section role="guest reviews">
+        <section>
             <h2> Guest Reviews</h2>
             <p>
                 If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
                 Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! 
-                Stop in today and check us out!
+                Stop in today and check us out! 
             </p>
             <span>-food inc, New York</span>
         </section>
-        <section role="about the food">
+        <section aria-label="about the food">
             <ul>
-                <li><img src="#" alt="food"></li>
-                <li><img src="#" alt="food"></li>
+                <li><img src="#" alt="picture of the food"></li>
+                <li><img src="#" alt="picture of the food"></li>
             </ul>
             <h2>Just the right food</h2>
             <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
@@ -131,20 +131,20 @@
                 Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! 
                 Perfect materials and freshly baked food.
             </p>
-            <form action="#" role="book a table">
-                <table aria-hidden="true">
+            <form action="#">
+                <table aria-label="book a table" role="none">
                     <tr>
-                        <th><label for="your name">Name</label></th>
-                        <td><input type="text" placeholder="your name*" id="your name"></td>
-                        <th><label for="your email">Name</label></th>
-                        <td><input type="text" placeholder="your email*" id="your email"></td>
+                        <th><label for="your_name">Name</label></th>
+                        <td><input type="text" placeholder="your name*" id="your_name"></td>
+                        <th><label for="your_email">Name</label></th>
+                        <td><input type="text" placeholder="your email*" id="your_email"></td>
                     </tr>
                     <tr>
                         <th><label for="date">Date</label></th>
                         <td><input type="date" name="date" id="date"></td>
-                        <th><label for="party number">Party number</label></th>
+                        <th><label for="party_number">Party number</label></th>
                         <td>
-                            <select name="party number" id="party number">
+                            <select name="party number" id="party_number">
                                 <option value="" disabled selected>Party number</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -157,8 +157,9 @@
         </section>
     </main>
     <footer>
+        <ul role="none">
             <li>
-                <ul>
+                <ul role="none">
                     <li>About US</li>
                     <li>Lambda's new and expanded Chelsea location represents a truly authentic Greek patisserie, 
                         featuring breakfasts of fresh croissants and steaming bowls of café.
@@ -167,29 +168,31 @@
                 </ul>
             </li>
             <li>
-                <ul>
+                <ul role="none">
                     <li>Opening Hours</li>
                     <li>Mon-Thu: 7:00am-8:00pm Fri-Sun: 7:00am-10:00pm</li>
                     <li>
                         <ul>
-                            <li><img src="#" alt="creditcard1"></li>
-                            <li><img src="#" alt="PayPal"></li>
-                            <li><img src="#" alt="VISA"></li>
-                            <li><img src="#" alt="craditcard2"></li>
+                            <li>List of payments(hide)</li>
+                            <li><span aria-label="Credit card" role="img"><i class="far fa-credit-card"></i></span></li>
+                            <li><span aria-label="PayPal" role="img"><i class="fab fa-cc-paypal"></i></span></li>
+                            <li><span aria-label="Visa" role="img"><i class="fab fa-cc-visa"></i></span></li>
+                            <li><span aria-label="Discover card" role="img"><i class="fab fa-cc-discover"></i></span></li>
                         </ul>
                     </li>
                 </ul>
             </li>
             <li>
-                <ul>
+                <ul role="none">
                     <li>Our Location</li>
                     <li>19th Paradise Street Sitia 128 Meserole Avenue</li>
                     <li>
                         <ul>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-trello"></i></a></li>
+                            <li>social media links</li>
+                            <li><a href="#" aria-label="Facebook link"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" aria-label="Youtube link"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#" aria-label="Twitter link"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" aria-label="Trello link"><i class="fab fa-trello"></i></a></li>
                         </ul>
                     </li>
                 </ul>
