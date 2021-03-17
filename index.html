@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <title>LAMBDA restaurant</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&family=Lato&family=Open+Sans:wght@400;700&family=Yeseva+One&display=swap" rel="stylesheet">
@@ -12,46 +12,46 @@
 </head>
 <body>
     <header class="header">
-        <section class="header_top">
+        <section class="header-top">
             <h1>Lambda restaurant (hide)</h1>
             <img src="./img/logo.png" alt="restaurant logo" class="logo">
         <nav class="navigation"  aria-label="website navigation">
-            <ul class="nav_ul">
-                <li class="nav_li"><a href="#">Home</a></li>
-                <li class="nav_li"><a href="#">About</a></li>
-                <li class="nav_li"><a href="#">Igredients</a></li>
-                <li class="nav_li"><a href="#">Menu</a></li>
-                <li class="nav_li"><a href="#">Reviews</a></li>
-                <li class="nav_li"><a href="#">Reservations</a></li>
+            <ul class="nav-ul">
+                <li><a href="#" class="nav-li">Home</a></li>
+                <li><a href="#" class="nav-li">About</a></li>
+                <li><a href="#" class="nav-li">Igredients</a></li>
+                <li><a href="#" class="nav-li">Menu</a></li>
+                <li><a href="#" class="nav-li">Reviews</a></li>
+                <li><a href="#" class="nav-li">Reservations</a></li>
             </ul>
-            <ul class="social_ul">
+            <ul class="social-ul">
                 <li>social media links</li>
-                <li class="social_li"><a href="#" aria-label="Twitter link"><i class="fab fa-twitter"></i></a></li>
-                <li class="social_li"><a href="#" aria-label="Youtube link"><i class="fab fa-youtube"></i></a></li>
-                <li class="social_li"><a href="#" aria-label="Facebook link"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" aria-label="Twitter link" class="social-li"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" aria-label="Youtube link" class="social-li"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#" aria-label="Facebook link" class="social-li"><i class="fab fa-facebook-f"></i></a></li>
             </ul>
         </nav>
         </section>
-        <section class="header_bottom">
+        <section class="header-bottom">
             <h2>the right ingredients for the right food</h2>
             <ul class="booking">
-                <li class="booking_li"><a href="#" accesskey="b">Book a table</a></li>
-                <li class="booking_li"><a href="#">See the menui</a></li>
+                <li><a href="#" accesskey="b" class="booking-li">Book a table</a></li>
+                <li><a href="#" class="booking-li">See the menu</a></li>
             </ul>
         </section>
     </header>
     <main class="main">
-        <section aria-label="about the restaurant">
+        <section aria-label="about the restaurant" class="about-restaurant">
             <h2>Just the right food</h2>
             <p>
                 If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
                 Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, 
                 and gourmet coffees make us hard to resist! Stop in today and check us out!
             </p>
-            <img src="#" alt="picture of a chef">
-            <img src="#" alt="picture of a dish">
+            <img src="./img/About/cook.png" alt="picture of a chef">
+            <img src="./img/About/dish_bg.png" alt="picture of a dish">
         </section>
-        <section aria-label="about the ingredients">
+        <section aria-label="about the ingredients" class="about-ingredients">
             <h2>Fine ingredients</h2>
             <p>
                 If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
@@ -59,88 +59,89 @@
                 Stop in today and check us out!
             </p>
             <ul>
-                <li><img src="#" alt="picture of a millet"></li>
-                <li><img src="#" alt="picture of spices"></li>
-                <li><img src="#" alt="picure of a bread"></li>
+                <li><img src="./img/Ingridients/ingr_1.png" alt="picture of a millet"></li>
+                <li><img src="./img/Ingridients/ingr_2.png" alt="picture of spices"></li>
+                <li><img src="./img/Ingridients/ingr_3.png" alt="picure of a bread"></li>
             </ul>
         </section>
-        <section aria-label="restaurant menu">
+        <section aria-label="restaurant menu" class="restaurant-menu">
             <h2>Menu (hide)</h2>
             <table role="menu" aria-label="Appetisers">
                 <tr><th colspan="2">Appetisers</th></tr>
-                <tr>
+                <tr class="price">
                     <td>Tzatsiki</td>
                     <td>$3.99</td>
                 </tr>
-                <tr><td colspan="2">Refreshing traditional cucumber and garlic youghurt dip</td></tr>
+                <tr class="dish-description"><td colspan="2">Refreshing traditional cucumber and garlic youghurt dip</td></tr>
             </table>
             <table role="menu" aria-label="Salads">
                 <tr><th colspan="2">Salads</th></tr>
-                <tr>
+                <tr class="price">
                     <td>Olive Special</td>
                     <td>$5.99</td>
                 </tr>
-                <tr><td colspan="2">Refreshing traditional cucumber and garlic youghurt di</td></tr>
-                <tr><td colspan="2">Special</td></tr>
-                <tr>
+                <tr class="dish-description"><td colspan="2">Refreshing traditional cucumber and garlic youghurt di</td></tr>
+                <tr class="special"><td colspan="2">Special</td></tr>
+                <tr class="price">
                     <td>Greek Salad</td>
                     <td>$5.50</td>
                 </tr>
-                <tr><td colspan="2">.Pureed eggplant, garlic, green pepper and tomato dip.</td></tr>
-                <tr>
+                <tr class="dish-description"><td colspan="2">.Pureed eggplant, garlic, green pepper and tomato dip.</td></tr>
+                <tr class="price">
                     <td>Gusto Salad</td>
                     <td>$5.25</td>
                 </tr>
-                <tr><td colspan="2">Pureed eggplant, garlic, green peppr and tomato dip.</td></tr>
+                <tr class="dish-description"><td colspan="2">Pureed eggplant, garlic, green peppr and tomato dip.</td></tr>
             </table>
             <table role="menu" aria-label="Starters">
                 <tr><th colspan="2">Starters</th></tr>
-                <tr>
+                <tr class="price">
                     <td>Halouml</td>
                     <td>$3.99</td>
                 </tr>
-                <tr><td colspan="2">Refreshing traditional cucumber and garlic youghurt dip.</td></tr>
-                <tr>
+                <tr class="dish-description"><td colspan="2">Refreshing traditional cucumber and garlic youghurt dip.</td></tr>
+                <tr class="price">
                     <td>Spinach Pie</td>
                     <td>$5.50</td>
                 </tr>
-                <tr><td colspan="2">.Pureed eggplant, garlic, green pepper and tomato dip.</td></tr>
+                <tr class="dish-description"><td colspan="2">.Pureed eggplant, garlic, green pepper and tomato dip.</td></tr>
             </table>
             <table role="menu" aria-label="Main Dishes">
                 <tr><th colspan="2">Main Dishes</th></tr>
-                <tr>
+                <tr class="price">
                     <td>Cornish Mackerel</td>
                     <td>$5.99</td>
                 </tr>
-                <tr><td colspan="2">Refreshing traditional cucumber and garlic youghurtdip.</td></tr>
-                <tr><td colspan="2">Special</td></tr>
-                <tr>
+                <tr class="dish-description"><td colspan="2">Refreshing traditional cucumber and garlic youghurtdip.</td></tr>
+                <tr class="special"><td colspan="2">Special</td></tr>
+                <tr class="price">
                     <td>Roast Lamb</td>
                     <td>$5.50</td>
                 </tr>
-                <tr><td colspan="2">.Pereed eggplant, garlic, green pepper and tomato dip</td></tr>
-                <tr>
+                <tr class="dish-description"><td colspan="2">.Pereed eggplant, garlic, green pepper and tomato dip</td></tr>
+                <tr class="price">
                     <td>Fried Chicken</td>
                     <td>$5.25</td>
                 </tr>
-                <tr><td colspan="2">Pureed eggplant, garlic, green pepper and tomato dip</td></tr>
-                <tr>
+                <tr class="dish-description"><td colspan="2">Pureed eggplant, garlic, green pepper and tomato dip</td></tr>
+                <tr class="price">
                     <td>Pastitsio</td>
                     <td>$5.99</td>
                 </tr>
-                <tr><td colspan="2">Refreshing traditional cucumber and garlic youghurt dip.</td></tr>
+                <tr class="dish-description"><td colspan="2">Refreshing traditional cucumber and garlic youghurt dip.</td></tr>
             </table>
         </section>
-        <section>
-            <h2> Guest Reviews</h2>
-            <p>
-                If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
-                Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! 
-                Stop in today and check us out! 
-            </p>
-            <span>-food inc, New York</span>
+        <section class="guest-reviews">
+            <h2>Guest Reviews</h2>
+            <blockquote>
+                <p>
+                    <span class="quote-sign">“</span>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
+                    Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! 
+                    Stop in today and check us out!<br><span class="cite">-food inc, New York</span>
+                </p>
+            </blockquote>
         </section>
-        <section aria-label="about the food">
+        <section aria-label="about the food" class="about-food">
             <ul>
                 <li><img src="#" alt="picture of the food"></li>
                 <li><img src="#" alt="picture of the food"></li>
@@ -152,14 +153,14 @@
                 Perfect materials and freshly baked food.
             </p>
             <form action="#" aria-label="book a table">
-                <label for="your_name">Name</label>
-                <input type="text" placeholder="your name*" id="your_name">
-                <label for="your_email">Name</label>
-                <input type="text" placeholder="your email*" id="your_email">
+                <label for="your-name">Name</label>
+                <input type="text" placeholder="your name*" id="your-name">
+                <label for="your-email">Name</label>
+                <input type="text" placeholder="your email*" id="your-email">
                 <label for="date">Date</label>
                 <input type="date" name="date" id="date">
-                <label for="party_number">Party number</label>
-                <select name="party number" id="party_number">
+                <label for="party-number">Party number</label>
+                <select name="party number" id="party-number">
                     <option value="" disabled selected>Party number</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -172,14 +173,14 @@
         <ul role="none">
             <li>
                 <span>About US</span>
-                <p>Lambda's new and expanded Chelsea location represents a truly authentic Greek patisserie, 
+                <p>Lambda's new and expanded Chelsea location represents a truly authentic <strong>Greek</strong> patisserie, 
                     featuring breakfasts of fresh croissants and steaming bowls of café.
                     Lamda the best restaurant in town</p>
             </li>
             <li>
                 <span>Opening Hours</span>
-                <p>Mon-Thu: 7:00am-8:00pm Fri-Sun: 7:00am-10:00pm</p>
-                <ul>
+                <p><strong>Mon-Thu:</strong> 7:00am-8:00pm<br><strong>Fri-Sun:</strong> 7:00am-10:00pm</p>
+                <ul class="cards">
                     <li>List of payments(hide)</li>
                     <li><span aria-label="Credit card" role="img"><i class="far fa-credit-card"></i></span></li>
                     <li><span aria-label="PayPal" role="img"><i class="fab fa-cc-paypal"></i></span></li>
@@ -189,13 +190,13 @@
             </li>
             <li>
                 <span>Our Location</span>
-                <p>19th Paradise Street Sitia 128 Meserole Avenue</p>
-                <ul>
+                <p><strong>19th Paradise Street Sitia 128 Meserole Avenue</strong></p>
+                <ul class="social-ul">
                     <li>social media links</li>
-                    <li><a href="#" aria-label="Facebook link"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#" aria-label="Youtube link"><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="#" aria-label="Twitter link"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#" aria-label="Trello link"><i class="fab fa-trello"></i></a></li>
+                    <li><a href="#" aria-label="Facebook link" class="social-li"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" aria-label="Youtube link" class="social-li"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#" aria-label="Twitter link" class="social-li"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" aria-label="Trello link" class="social-li"><i class="fab fa-trello"></i></a></li>
                 </ul>
             </li>
         </ul>
