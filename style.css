@@ -3,300 +3,228 @@ font-family: 'Lato', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Yeseva One', cursive; */
 
-/* common */
+/* Common */
 
 body {
     margin: 0;
+    width: 1600px;
 }
 
-h2 {
+section {
     margin: 0;
-    font-size: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hidden {
+    margin: 0;
+    color: rgba(255, 0, 0, 1);
+}
+
+.list {
+    list-style: none;
+}
+
+.socials {
+    list-style: none;
+}
+
+.item {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+.title {
+    margin: 0;
+}
+
+/* Fonts */
+
+.gentium-book {
+    color: rgba(221, 224, 223, 1);
+    font-weight: bold;
+    font-family: 'Gentium Book Basic', serif;
+}
+
+.gentium-book.list {
+    font-size: 21px;
     line-height: 1.2;
+    text-align: justify;
+}
+
+.gentium-book.review {
+    font-size: 25px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.yeseva-one {
+    color: rgba(255, 255, 255, 0.922);
     font-weight: lighter;
     font-family: 'Yeseva One', cursive;
+    text-align: center;
 }
 
-p {
+.yeseva-one.title {
+    font-size: 36px;
+    line-height: 0.667;
+    color: rgba(204, 153, 0, 1);
+}
+
+.yeseva-one.headline {
+    font-size: 90px;
+    line-height: 1.2;   
+}
+
+.yeseva-one.price {
+    font-size: 21px;
+    line-height: 1.143;
+    color: rgba(200, 159, 45, 1);
+    text-align: justify;
+}
+
+.yeseva-one.footer-headline {
+    font-size: 21px;
+    line-height: 1.143;
+    color: rgba(254, 254, 254, 1);
+    text-align: center;
+}
+  
+.lato {
+    font-size: 18px;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 1);
+    font-weight: lighter;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.lato.description {
     font-size: 16px;
     line-height: 1.5;
-    font-family: 'Lato', sans-serif;
+    color: rgba(76, 76, 76, 1);
+}
+
+.open-sans {
+    font-size: 14px;
+    line-height: 1.2;
+    color: rgba(201, 161, 49, 1);
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+.open-sans.footer-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 1);
+    font-weight: lighter;
     text-align: center;
 }
 
 /* Header */
 
-h1 {
+header {
     margin: 0;
-
-}
-
-.header {
     background-image: url(./img/Header/header_bg_shadow.png), url(./img/Header/header_bg.jpg);
+    background-color: rgba(44, 44, 44, 1);
     background-repeat: no-repeat;
-    background-color: rgb(20, 26, 0);
-    width: 1600px;
-    height: 750px;
+    background-position: center;
+    background-size: cover;
 }
 
-.nav-ul {
-    font-size: 21px;
-    line-height: 1.2;
-    font-weight: 400;
-    font-family: 'Gentium Book Basic', serif;
-    list-style-type: none;
+.socials .item {
+    color: rgba(204, 153, 0, 1);
 }
 
-.nav-li {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-.social-ul {
-    font-size: 21px;
-    line-height: 1.2;
-    list-style-type: none;
-}
-
-.social-li {
-    text-decoration: none;
-    color: rgb(218, 179, 62);
-}
-
-.header-bottom h2 {
-    font-size: 90px;
-    line-height: 1.2;
-    color: rgba(255, 255, 255, 0.922);
-    font-family: 'Yeseva One', cursive;
-    text-align: center;
-    font-weight: lighter;
-}
-
-.booking {
-    font-size: 18px;
-    line-height: 1.2;
-    font-weight: lighter;
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    list-style-type: none;
-    text-transform: uppercase;
+.list.booking {
     margin: 0;
-
 }
 
-.booking-li {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-/* about the restaurant */
+/* About the restaurant  */
 
 .about-restaurant {
-    margin: 0;
     background-image: url(./img/decoration/pattern.png), url(./img/decoration/bg.jpg);
-    background-repeat: no-repeat;
-    background-color: rgb(255, 255, 255);
-    width: 1600px;
-    height: 710px;
+    background-color:rgba(255, 255, 255, 1) ;
 }
 
-.about-restaurant h2 {
-    color: rgb(204, 153, 0);
-}
-
-.about-restaurant p {
-    color: rgb(76, 76, 76);;
-}
-
-/* about the ingredients */
+/* About the ingredients */
 
 .about-ingredients {
-    width: 1600px;
-    height: 758px;
-    margin: 0;
     background-image: url(./img/Ingridients/ingr_bg.jpg);
-    background-color: rgb(95, 38, 0);
+    background-color: rgba(75, 116, 0, 1);
 }
 
-.about-ingredients h2 {
-    color:  rgb(255, 255, 255);
-}
-
-.about-ingredients p {
-    color:  rgb(255, 255, 255);
-}
-  
 .about-ingredients ul {
-    list-style-type: none;
+    margin: 0;
 }
 
-/* menu */
+.about-ingredients .description {
+    color: rgba(255, 255, 255, 0.922);
+}
+
+/* Restaurant menu */
 
 .restaurant-menu {
-    width: 1600px;
-    height: 994px;
     background-image: url(./img/decoration/pattern_menu.png), url(./img/decoration/background_menu.jpg);
-    background-repeat: no-repeat;
-    background-color: rgb(255, 255, 255);
-}   
-
-th {
-    font-size: 36px;
-    line-height: 0.667;
-    font-weight: lighter;
-    color: rgb(204, 153, 0);
-    font-family: 'Yeseva One', cursive;
-    text-align: center;
-
+    background-color:rgba(255, 255, 255, 1);
 }
 
-.price {
-    font-size: 21px;
-    line-height: 1.143;
-    font-weight: lighter;
-    color: rgb(204, 153, 0);
-    font-family: 'Yeseva One', cursive;
-    text-align: justify;
-}
-
-.dish-description {
-    font-size: 16px;
-    line-height: 1.143;
-    font-weight: lighter;
-    color: rgb(76, 76, 76);
-    font-family: 'Lato', sans-serif;
-}
-
-.special {
-    font-size: 14px;
-    line-height: 1.714;
-    font-weight: lighter;
-    color: rgb(248, 250, 250);
-    font-family: 'Lato', sans-serif;
-
-}
-
-/* Guest Reviews */
+/* Guest reviews */
 
 .guest-reviews {
-    width: 1600px;
-    height: 758px;
     background-image: url(./img/Quote/quote_bg.jpg);
-    background-repeat: no-repeat;
-    background-color: rgb(92, 45, 1);
+    background-color: rgba(184, 98, 0, 1);
 }
 
-.guest-reviews h2 {
-    color: rgb(248, 250, 250);
-}
-
-.guest-reviews p {
-    font-size: 25px;
-    line-height: 1.8;
-    font-weight: bold;
-    color: rgb(221, 224, 223);
-    font-family: 'Gentium Book Basic', serif;
-    text-align: center;
-
+.guest-reviews .title {
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 1);
 }
 
 .quote-sign {
     font-size: 96px;
     line-height: 0.469;
     color: rgba(242, 244, 244, 0.471);
-    font-family: "Georgia";
-}
-
-.cite {
-    font-size: 18px;
-    color: rgb(221, 224, 223);
-    font-weight: lighter;
-    font-family: 'Lato', sans-serif;
-}
-
-/* About the food */
-
-.about-food {
-    margin: 0;
-    background-image: url(./img/decoration/pattern.png), url(./img/decoration/bg.jpg);
-    background-repeat: no-repeat;
-    background-color: rgb(255, 255, 255);
-    width: 1600px;
-    height: 710px;
-}
-
-.about-food ul {
-    margin: 0;
-    list-style-type: none;
-
-}
-
-.about-food h2 {
-    line-height: 0.667;
-    color: rgb(204, 153, 0);
-}
-
-.about-food p {
-    color: rgb(76, 76, 76);
-}
-
-label {
-    font-size: 14px;
-    line-height: 1.2;
-    font-weight: bold;
-    color: rgb(201, 161, 49);
-    font-family: 'Open Sans', sans-serif;
-    text-align: left;
-}
-
-button {
-    font-size: 16px;
-    line-height: 1.2;
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
+}
+
+.review {
+    margin: 0;
+}
+
+.food-inc-quote {
+    margin: 0;
+}
+
+/* Reservations */
+
+.reservations {
+    background-image: url(./img/decoration/pattern.png), url(./img/decoration/bg.jpg);
+    background-color:rgba(255, 255, 255, 1);
+}
+
+.reservations .list {
+    margin: 0;
 }
 
 /* Footer */
 
 footer {
-    background-color: rgb(25, 25, 25);
+    margin: 0;
+    background-image: url(./img/Footer/footer_bg.jpg);
+    background-color: rgba(25, 25, 25, 1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+footer .list {
     margin: 0;
 }
 
-footer ul {
-    margin: 0;
-    list-style-type: none;
-}
-
-footer span {
-    font-size: 21px;
-    line-height: 1.143;
-    font-weight: lighter;
-    color: rgb(254, 254, 254);
-    font-family: 'Yeseva One', cursive;
-    text-align: center;
-}
-
-footer p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: rgb(255, 255, 255);
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-}
-
-.cards {
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-    line-height: 1.5;
-    text-align: center;
-}
-
-footer .social-ul {
-    font-size: 16px;
-}
-
-footer .social-li {
-    color: rgb(255, 255, 255);
+.list .item {
+    color: rgba(255, 255, 255, 1);
 }
