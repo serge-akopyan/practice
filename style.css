@@ -20,6 +20,7 @@ section {
 .hidden {
     margin: 0;
     color: rgba(255, 0, 0, 1);
+    display: none;
 }
 
 .list {
@@ -38,6 +39,7 @@ section {
 .title {
     margin: 0;
 }
+
 
 /* Fonts */
 
@@ -126,6 +128,7 @@ section {
 /* Header */
 
 header {
+    box-sizing: content-box;
     margin: 0;
     background-image: url(./img/Header/header_bg_shadow.png), url(./img/Header/header_bg.jpg);
     background-color: rgba(44, 44, 44, 1);
@@ -134,14 +137,63 @@ header {
     background-size: cover;
 }
 
+.header-logo-nav {
+    display: flex;
+    justify-content: flex-start;
+    padding: 50px 175px 0 175px;
+    margin: 0 0 140px 0;
+}
+
+.logo {
+    margin-right: 250px;
+}
+
+.website-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-grow: 1;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+    flex-grow: 1;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    margin-right: 25px;
+}
+
 .socials .item {
     color: rgba(204, 153, 0, 1);
+    margin-right: 15px;
+}
+
+.header-headline-booking .headline {
+    padding: 0 315px 0 315px;
+    margin: 0 0 150px 0;
 }
 
 .list.booking {
-    margin: 0;
+    padding: 0 610px 0 610px;
+    display: flex;
+    justify-content: space-between;
 }
 
+.booking li {
+    text-transform: uppercase;
+    margin: 0 0 145px 0;
+}
 /* About the restaurant  */
 
 .about-restaurant {
@@ -228,3 +280,4 @@ footer .list {
 .list .item {
     color: rgba(255, 255, 255, 1);
 }
+
