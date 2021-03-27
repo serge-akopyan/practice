@@ -99,7 +99,6 @@ section {
     color: rgba(255, 255, 255, 1);
     font-weight: lighter;
     font-family: 'Lato', sans-serif;
-    text-align: center;
 }
 
 .lato.description {
@@ -199,6 +198,26 @@ header {
 .about-restaurant {
     background-image: url(./img/decoration/pattern.png), url(./img/decoration/bg.jpg);
     background-color:rgba(255, 255, 255, 1) ;
+    padding: 100px 175px 100px 175px;
+    display: flex;
+    flex-direction: row;
+}
+
+.restaurant-description {
+    padding: 0 85px 0 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.restaurant-description .description{
+    margin: 0;
+}
+
+.restaurant-description img {
+    align-self: flex-start;
+    margin-left: 80px;
 }
 
 /* About the ingredients */
@@ -206,14 +225,24 @@ header {
 .about-ingredients {
     background-image: url(./img/Ingridients/ingr_bg.jpg);
     background-color: rgba(75, 116, 0, 1);
+    padding: 100px 215px 100px 815px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.about-ingredients ul {
-    margin: 0;
-}
-
-.about-ingredients .description {
+.ingredients-group .description {
     color: rgba(255, 255, 255, 0.922);
+    margin: 0 0 75px 0;
+}
+
+.ingredients-group {
+    padding: 90px 80px 75px 80px;
+}
+
+.ingredients-group .title {
+    margin: 0 0 80px 0;
 }
 
 /* Restaurant menu */
@@ -221,18 +250,68 @@ header {
 .restaurant-menu {
     background-image: url(./img/decoration/pattern_menu.png), url(./img/decoration/background_menu.jpg);
     background-color:rgba(255, 255, 255, 1);
+    padding: 100px 285px 100px 285px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
+.restaurant-menu th {
+    padding: 0 0 75px 0;
+}
+
+.restaurant-menu .title {
+    margin: 0 0 75px 0;
+}
+
+.yeseva-one.price {
+    padding: 0 0 30px 0;
+}
+
+.lato.description {
+    padding: 0 0 45px 0;
+}
+
+.appetisers {
+    order: 0;
+    align-self: flex-start;
+}
+
+.salads {
+    order: 3;
+    align-self: flex-end;
+}
+
+.startes {
+    order: 2;
+    margin: 0;
+    align-self: flex-start;
+}
+
+.main-dishes {
+    order: 4;
+    align-self: flex-end;
+
+}
 /* Guest reviews */
 
 .guest-reviews {
     background-image: url(./img/Quote/quote_bg.jpg);
     background-color: rgba(184, 98, 0, 1);
+    padding: 100px 415px 100px 415px;
+}
+
+.reviews-group {
+    padding: 80px 70px 100px 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .guest-reviews .title {
-    line-height: 1.2;
+    line-height: 1.2;   
     color: rgba(255, 255, 255, 1);
+    margin: 0 0 85px 0;
 }
 
 .quote-sign {
@@ -241,7 +320,14 @@ header {
     color: rgba(242, 244, 244, 0.471);
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-}
+    margin: 0 15px 0 0;
+}   
+
+br {
+    display: block; 
+    content: ""; 
+    margin-bottom: 55px;
+ }
 
 .review {
     margin: 0;
@@ -249,6 +335,8 @@ header {
 
 .food-inc-quote {
     margin: 0;
+    display: flex;
+    justify-content: flex-start;
 }
 
 /* Reservations */
@@ -256,11 +344,82 @@ header {
 .reservations {
     background-image: url(./img/decoration/pattern.png), url(./img/decoration/bg.jpg);
     background-color:rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: row;
+    padding: 100px 285px 100px 215px;
+}
+
+.reservations-img-one {
+    margin: 0 30px 0 0;
+}
+
+.reservations-img-two {
+    margin: 0 100px 0 0;
+}
+
+.reservations-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.reservations .title {
+    margin: 0 0 80px 0;
+}
+
+
+.reservations .description {
+    margin: 0 0 25px 0;
+    padding: 0;
+    text-align: center;
 }
 
 .reservations .list {
     margin: 0;
 }
+
+.book-table {
+    padding: 25px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.name-input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 30px 0 0;
+}
+
+.email-input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.date-input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.number-input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#party-number {
+    width: 156px;
+    height: 24px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
 
 /* Footer */
 

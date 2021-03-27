@@ -42,39 +42,53 @@
     </header>
     <main>
         <section aria-label="about the restaurant" class="about-restaurant">
-            <h2 class="title yeseva-one">Just the right food</h2>
-            <p class="lato description">
-                If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
-                Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, 
-                and gourmet coffees make us hard to resist! Stop in today and check us out!
-            </p>
-            <img src="./img/About/cook.png" alt="picture of a chef">
+            <div class="restaurant-description">
+                <h2 class="title yeseva-one">Just the right food</h2>
+                <p class="lato description">
+                    If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
+                    Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, 
+                    and gourmet coffees make us hard to resist! Stop in today and check us out!
+                </p>
+                <img src="./img/About/cook.png" alt="picture of a chef">
+            </div>
             <img src="./img/About/dish_bg.png" alt="picture of a dish">
         </section>
         <section aria-label="about the ingredients" class="about-ingredients">
-            <h2 class="title yeseva-one">Fine ingredients</h2>
-            <p class="lato description">
-                If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
-                Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! 
-                Stop in today and check us out!
-            </p>
-            <ul class="list">
-                <li><img src="./img/Ingridients/ingr_1.png" alt="picture of a millet"></li>
-                <li><img src="./img/Ingridients/ingr_2.png" alt="picture of spices"></li>
-                <li><img src="./img/Ingridients/ingr_3.png" alt="picure of a bread"></li>
-            </ul>
+            <div class="ingredients-group">
+                <h2 class="title yeseva-one">Fine ingredients</h2>
+                <p class="lato description">
+                    If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
+                    Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! 
+                    Stop in today and check us out!
+                </p>
+                <ul class="list">
+                    <li><img src="./img/Ingridients/ingr_1.png" alt="picture of a millet"></li>
+                    <li><img src="./img/Ingridients/ingr_2.png" alt="picture of spices"></li>
+                    <li><img src="./img/Ingridients/ingr_3.png" alt="picure of a bread"></li>
+                </ul>
+            </div>
         </section>
         <section aria-label="restaurant menu" class="restaurant-menu">
             <h2 class="hidden">Menu</h2>
-            <table role="menu" aria-label="Appetisers">
+            <table role="menu" aria-label="Appetisers" class="appetisers">
                 <tr><th colspan="2" class="title yeseva-one">Appetisers</th></tr>
                 <tr>
                     <td class="price yeseva-one">Tzatsiki</td>
                     <td class="price yeseva-one">$3.99</td>
                 </tr>
                 <tr><td colspan="2" class="lato description">Refreshing traditional cucumber and garlic youghurt dip</td></tr>
+                <tr>
+                    <td class="price yeseva-one">Aubergine Salad</td>
+                    <td class="price yeseva-one">$5.50</td>
+                </tr>
+                <tr><td colspan="2" class="lato description">Pureed eggplant, garlic, green pepper and tomato dip.</td></tr>
+                <tr>
+                    <td class="price yeseva-one">Aubergine Salad</td>
+                    <td class="price yeseva-one">$5.25</td>
+                </tr>
+                <tr><td colspan="2" class="lato description">Pureed eggplant, garlic, green pepper and tomato dip.</td></tr>
             </table>
-            <table role="menu" aria-label="Salads">
+            <table role="menu" aria-label="Salads" class="salads"> 
                 <tr><th colspan="2" class="title yeseva-one">Salads</th></tr>
                 <tr>
                     <td class="price yeseva-one">Olive Special</td>
@@ -93,7 +107,7 @@
                 </tr>
                 <tr><td colspan="2" class="lato description">Pureed eggplant, garlic, green peppr and tomato dip.</td></tr>
             </table>
-            <table role="menu" aria-label="Starters">
+            <table role="menu" aria-label="Starters" class="startes">
                 <tr><th colspan="2" class="title yeseva-one">Starters</th></tr>
                 <tr>
                     <td class="price yeseva-one">Halouml</td>
@@ -106,7 +120,7 @@
                 </tr>
                 <tr><td colspan="2" class="lato description">.Pureed eggplant, garlic, green pepper and tomato dip.</td></tr>
             </table>
-            <table role="menu" aria-label="Main Dishes">
+            <table role="menu" aria-label="Main Dishes" class="main-dishes">
                 <tr><th colspan="2" class="title yeseva-one">Main Dishes</th></tr>
                 <tr>
                     <td class="price yeseva-one">Cornish Mackerel</td>
@@ -132,41 +146,55 @@
             </table>
         </section>
         <section class="guest-reviews">
-            <h2 class="title yeseva-one">Guest Reviews</h2>
-            <blockquote class="food-inc-quote">
-                <p class="review gentium-book">
-                    <span class="quote-sign">“</span>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
-                    Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! 
-                    Stop in today and check us out!<br><span class="lato">-food inc, New York</span>
-                </p>
-            </blockquote>
+            <div class="reviews-group">
+                <h2 class="title yeseva-one">Guest Reviews</h2>
+                <blockquote class="food-inc-quote">
+                    <span class="quote-sign">“</span>
+                    <p class="review gentium-book">
+                        If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
+                        Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! 
+                        Stop in today and check us out!<br><span class="lato">-food inc, New York</span>
+                    </p>
+                </blockquote>
+                
+            </div>
         </section>
         <section aria-label="about the food" class="reservations">
             <ul class="list">
-                <li><img src="./img/Reservations/reserv_1.jpg" alt="picture of the food"></li>
-                <li><img src="./img/Reservations/reserv_2.jpg" alt="picture of the food"></li>
+                <li><img src="./img/Reservations/reserv_1.jpg" alt="picture of the food" class="reservations-img-one"></li>
+                <li><img src="./img/Reservations/reserv_2.jpg" alt="picture of the food" class="reservations-img-two"></li>
             </ul>
-            <h2 class="title yeseva-one">Just the right food</h2>
-            <p class="lato description">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
+            <div class="reservations-group">
+                <h2 class="title yeseva-one">Just the right food</h2>
+                <p class="lato description">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
                 Perfect materials and freshly baked food.
-                Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! 
-                Perfect materials and freshly baked food.
-            </p>
-            <form action="#" aria-label="book a table">
-                <label for="your-name" class="open-sans">Name</label>
-                <input type="text" placeholder="your name*" id="your-name">
-                <label for="your-email" class="open-sans">Name</label>
-                <input type="text" placeholder="your email*" id="your-email">
-                <label for="date" class="open-sans">Date</label>
-                <input type="date" name="date" id="date">
-                <label for="party-number" class="open-sans">Party number</label>
-                <select name="party number" id="party-number">
-                    <option value="" disabled selected>Party number</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                </select>
+                </p>
+                <p class="lato description">Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! 
+                    Perfect materials and freshly baked food.</p>
+                <form action="#" aria-label="book a table" class="book-table">
+                    <div class="name-input">
+                        <label for="your-name" class="open-sans">Name</label>
+                        <input type="text" placeholder="your name*" id="your-name">
+                    </div>
+                    <div class="email-input">
+                        <label for="your-email" class="open-sans">Name</label>
+                        <input type="text" placeholder="your email*" id="your-email">
+                    </div>
+                    <div class="date-input">
+                        <label for="date" class="open-sans">Date</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                   <div class="number-input">
+                       <label for="party-number" class="open-sans">Party number</label>
+                       <select name="party number" id="party-number">
+                           <option value="" disabled selected>Party number</option>
+                           <option value="1">1</option>
+                           <option value="2">2</option>
+                        </select>
+                   </div>
+                </form>
                 <button type="submit">Book now!</button>
-            </form>
+            </div>
         </section>
     </main>
     <footer>
