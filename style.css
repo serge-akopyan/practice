@@ -403,7 +403,9 @@ br {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin: 0 30px 0 0;
 }
+
 
 .number-input {
     display: flex;
