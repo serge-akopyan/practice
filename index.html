@@ -14,26 +14,27 @@
     <header>
         <section class="header-logo-nav">
             <h1 class="hidden">Lambda restaurant</h1>
-            <img src="#" alt="restaurant logo" class="logo">
-        <nav aria-label="website navigation" class="website-navigation">
-            <ul class="list gentium-book">
-                <li><a href="#" class="item">Home</a></li>
-                <li><a href="#" class="item">About</a></li>
-                <li><a href="#" class="item">Igredients</a></li>
-                <li><a href="#" class="item">Menu</a></li>
-                <li><a href="#" class="item">Reviews</a></li>
-                <li><a href="#" class="item">Reservations</a></li>
-            </ul>
-            <ul class="socials">
-                <li class="hidden">social media links</li>
-                <li><a href="#" aria-label="Twitter link" class="item"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#" aria-label="Youtube link" class="item"><i class="fab fa-youtube"></i></a></li>
-                <li><a href="#" aria-label="Facebook link" class="item"><i class="fab fa-facebook-f"></i></a></li>
-            </ul>
-        </nav>
+            <img src="./img/Header/Logo.png" alt="restaurant logo" class="logo">
+            <nav aria-label="website navigation" class="website-navigation">
+                <ul class="list gentium-book">
+                    <li><a href="#" class="item">Home</a></li>
+                    <li><a href="#" class="item">About</a></li>
+                    <li><a href="#" class="item">Igredients</a></li>
+                    <li><a href="#" class="item">Menu</a></li>
+                    <li><a href="#" class="item">Reviews</a></li>
+                    <li><a href="#" class="item">Reservations</a></li>
+                </ul>
+                <ul class="socials">
+                    <li class="hidden">social media links</li>
+                    <li><a href="#" aria-label="Twitter link" class="item"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" aria-label="Youtube link" class="item"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#" aria-label="Facebook link" class="item"><i class="fab fa-facebook-f"></i></a></li>
+                </ul>
         </section>
-        <section class="header-headline-booking">
+        <section class="header-headline">
             <h2 class="headline yeseva-one">the right ingredients for the right food</h2>
+        </section>
+        <section class="header-booking">
             <ul class="list booking">
                 <li><a href="#" accesskey="b" class="lato item">Book a table</a></li>
                 <li><a href="#" class="lato item">See the menu</a></li>
@@ -49,7 +50,7 @@
                     Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, 
                     and gourmet coffees make us hard to resist! Stop in today and check us out!
                 </p>
-                <img src="./img/About/cook.png" alt="picture of a chef">
+                <img src="./img/About/cook.png" alt="picture of a chef" class="picture-chef">
             </div>
             <img src="./img/About/dish_bg.png" alt="picture of a dish">
         </section>
@@ -62,88 +63,92 @@
                     Stop in today and check us out!
                 </p>
                 <ul class="list">
-                    <li><img src="./img/Ingridients/ingr_1.png" alt="picture of a millet"></li>
-                    <li><img src="./img/Ingridients/ingr_2.png" alt="picture of spices"></li>
-                    <li><img src="./img/Ingridients/ingr_3.png" alt="picure of a bread"></li>
+                    <li  class="item"><img src="./img/Ingridients/ingr_1.png" alt="picture of a millet"></li>
+                    <li  class="item"><img src="./img/Ingridients/ingr_2.png" alt="picture of spices"></li>
+                    <li  class="item"><img src="./img/Ingridients/ingr_3.png" alt="picure of a bread"></li>
                 </ul>
             </div>
         </section>
         <section aria-label="restaurant menu" class="restaurant-menu">
             <h2 class="hidden">Menu</h2>
-            <table role="menu" aria-label="Appetisers" class="appetisers">
-                <tr><th colspan="2" class="title yeseva-one">Appetisers</th></tr>
-                <tr>
-                    <td class="price yeseva-one">Tzatsiki</td>
-                    <td class="price yeseva-one">$3.99</td>
-                </tr>
-                <tr><td colspan="2" class="lato description">Refreshing traditional cucumber and garlic youghurt dip</td></tr>
-                <tr>
-                    <td class="price yeseva-one">Aubergine Salad</td>
-                    <td class="price yeseva-one">$5.50</td>
-                </tr>
-                <tr><td colspan="2" class="lato description">Pureed eggplant, garlic, green pepper and tomato dip.</td></tr>
-                <tr>
-                    <td class="price yeseva-one">Aubergine Salad</td>
-                    <td class="price yeseva-one">$5.25</td>
-                </tr>
-                <tr><td colspan="2" class="lato description">Pureed eggplant, garlic, green pepper and tomato dip.</td></tr>
-            </table>
-            <table role="menu" aria-label="Salads" class="salads"> 
-                <tr><th colspan="2" class="title yeseva-one">Salads</th></tr>
-                <tr>
-                    <td class="price yeseva-one">Olive Special</td>
-                    <td class="price yeseva-one">$5.99</td>
-                </tr>
-                <tr><td colspan="2" class="lato description">Refreshing traditional cucumber and garlic youghurt dip</td></tr>
-                <tr><td colspan="2">Special</td></tr>
-                <tr>
-                    <td class="price yeseva-one">Greek Salad</td>
-                    <td class="price yeseva-one">$5.50</td>
-                </tr>
-                <tr><td colspan="2" class="lato description">.Pureed eggplant, garlic, green pepper and tomato dip.</td></tr>
-                <tr>
-                    <td class="price yeseva-one">Gusto Salad</td>
-                    <td class="price yeseva-one">$5.25</td>
-                </tr>
-                <tr><td colspan="2" class="lato description">Pureed eggplant, garlic, green peppr and tomato dip.</td></tr>
-            </table>
-            <table role="menu" aria-label="Starters" class="startes">
-                <tr><th colspan="2" class="title yeseva-one">Starters</th></tr>
-                <tr>
-                    <td class="price yeseva-one">Halouml</td>
-                    <td class="price yeseva-one">$3.99</td>
-                </tr>
-                <tr><td colspan="2" class="lato description">Refreshing traditional cucumber and garlic youghurt dip.</td></tr>
-                <tr>
-                    <td class="price yeseva-one">Spinach Pie</td>
-                    <td class="price yeseva-one">$5.50</td>
-                </tr>
-                <tr><td colspan="2" class="lato description">.Pureed eggplant, garlic, green pepper and tomato dip.</td></tr>
-            </table>
-            <table role="menu" aria-label="Main Dishes" class="main-dishes">
-                <tr><th colspan="2" class="title yeseva-one">Main Dishes</th></tr>
-                <tr>
-                    <td class="price yeseva-one">Cornish Mackerel</td>
-                    <td class="price yeseva-one">$5.99</td>
-                </tr>
-                <tr><td colspan="2" class="lato description">Refreshing traditional cucumber and garlic youghurtdip.</td></tr>
-                <tr><td colspan="2">Special</td></tr>
-                <tr>
-                    <td class="price yeseva-one">Roast Lamb</td>
-                    <td class="price yeseva-one">$5.50</td>
-                </tr>
-                <tr><td colspan="2" class="lato description">.Pereed eggplant, garlic, green pepper and tomato dip</td></tr>
-                <tr>
-                    <td class="price yeseva-one">Fried Chicken</td>
-                    <td class="price yeseva-one">$5.25</td>
-                </tr>
-                <tr><td colspan="2" class="lato description">Pureed eggplant, garlic, green pepper and tomato dip</td></tr>
-                <tr>
-                    <td class="price yeseva-one">Pastitsio</td>
-                    <td class="price yeseva-one">$5.99</td>
-                </tr>
-                <tr><td colspan="2" class="lato description">Refreshing traditional cucumber and garlic youghurt dip.</td></tr>
-            </table>
+            <div class="appetisers-salads">
+                <table role="menu" aria-label="Appetisers" class="appetisers">
+                    <tr><th colspan="2" class="title yeseva-one">Appetisers</th></tr>
+                    <tr>
+                        <td class="price yeseva-one">Tzatsiki</td>
+                        <td class="price yeseva-one">$3.99</td>
+                    </tr>
+                    <tr><td colspan="2" class="lato description">Refreshing traditional cucumber and garlic youghurt dip</td></tr>
+                    <tr>
+                        <td class="price yeseva-one">Aubergine Salad</td>
+                        <td class="price yeseva-one">$5.50</td>
+                    </tr>
+                    <tr><td colspan="2" class="lato description">Pureed eggplant, garlic, green pepper and tomato dip.</td></tr>
+                    <tr>
+                        <td class="price yeseva-one">Aubergine Salad</td>
+                        <td class="price yeseva-one">$5.25</td>
+                    </tr>
+                    <tr><td colspan="2" class="lato description">Pureed eggplant, garlic, green pepper and tomato dip.</td></tr>
+                </table>
+                <table role="menu" aria-label="Salads" class="salads"> 
+                    <tr><th colspan="2" class="title yeseva-one">Salads</th></tr>
+                    <tr>
+                        <td class="price yeseva-one">Olive Special</td>
+                        <td class="price yeseva-one">$5.99</td>
+                    </tr>
+                    <tr><td colspan="2" class="lato description">Refreshing traditional cucumber and garlic youghurt dip</td></tr>
+                    <tr><td colspan="2" class="special">Special</td></tr>
+                    <tr>
+                        <td class="price yeseva-one">Greek Salad</td>
+                        <td class="price yeseva-one">$5.50</td>
+                    </tr>
+                    <tr><td colspan="2" class="lato description">.Pureed eggplant, garlic, green pepper and tomato dip.</td></tr>
+                    <tr>
+                        <td class="price yeseva-one">Gusto Salad</td>
+                        <td class="price yeseva-one">$5.25</td>
+                    </tr>
+                    <tr><td colspan="2" class="lato description">Pureed eggplant, garlic, green peppr and tomato dip.</td></tr>
+                </table>
+            </div>
+            <div class="startes-main-dishes">
+                <table role="menu" aria-label="Starters" class="startes">
+                    <tr><th colspan="2" class="title yeseva-one">Starters</th></tr>
+                    <tr>
+                        <td class="price yeseva-one">Halouml</td>
+                        <td class="price yeseva-one">$3.99</td>
+                    </tr>
+                    <tr><td colspan="2" class="lato description">Refreshing traditional cucumber and garlic youghurt dip.</td></tr>
+                    <tr>
+                        <td class="price yeseva-one">Spinach Pie</td>
+                        <td class="price yeseva-one">$5.50</td>
+                    </tr>
+                    <tr><td colspan="2" class="lato description">.Pureed eggplant, garlic, green pepper and tomato dip.</td></tr>
+                </table>
+                <table role="menu" aria-label="Main Dishes" class="main-dishes">
+                    <tr><th colspan="2" class="title yeseva-one">Main Dishes</th></tr>
+                    <tr>
+                        <td class="price yeseva-one">Cornish Mackerel</td>
+                        <td class="price yeseva-one">$5.99</td>
+                    </tr>
+                    <tr><td colspan="2" class="lato description">Refreshing traditional cucumber and garlic youghurtdip.</td></tr>
+                    <tr><td colspan="2" class="special">Special</td></tr>
+                    <tr>
+                        <td class="price yeseva-one" >Roast Lamb</td>
+                        <td class="price yeseva-one">$5.50</td>
+                    </tr>
+                    <tr><td colspan="2" class="lato description">.Pereed eggplant, garlic, green pepper and tomato dip</td></tr>
+                    <tr>
+                        <td class="price yeseva-one">Fried Chicken</td>
+                        <td class="price yeseva-one">$5.25</td>
+                    </tr>
+                    <tr><td colspan="2" class="lato description">Pureed eggplant, garlic, green pepper and tomato dip</td></tr>
+                    <tr>
+                        <td class="price yeseva-one">Pastitsio</td>
+                        <td class="price yeseva-one">$5.99</td>
+                    </tr>
+                    <tr><td colspan="2" class="lato description">Refreshing traditional cucumber and garlic youghurt dip.</td></tr>
+                </table>
+            </div>
         </section>
         <section class="guest-reviews">
             <div class="reviews-group">
@@ -160,7 +165,7 @@
             </div>
         </section>
         <section aria-label="about the food" class="reservations">
-            <ul class="list">
+            <ul>
                 <li><img src="./img/Reservations/reserv_1.jpg" alt="picture of the food" class="reservations-img-one"></li>
                 <li><img src="./img/Reservations/reserv_2.jpg" alt="picture of the food" class="reservations-img-two"></li>
             </ul>
@@ -198,9 +203,9 @@
         </section>
     </main>
     <footer>
-        <ul role="none" class="list">
+        <ul role="none" class="footer-list">
             <li class="about-us">
-                <span class="yeseva-one footer-headline">About US</span>
+                <span class="yeseva-one footer-headline">About Us</span>
                 <p class="open-sans footer-description">Lambda's new and expanded Chelsea location represents a truly authentic <strong>Greek</strong> patisserie, 
                     featuring breakfasts of fresh croissants and steaming bowls of café.
                     Lamda the best restaurant in town</p>
@@ -208,7 +213,7 @@
             <li class="opening-hours">
                 <span class="yeseva-one footer-headline">Opening Hours</span>
                 <p class="open-sans footer-description"><strong>Mon-Thu:</strong> 7:00am-8:00pm<br><strong>Fri-Sun:</strong> 7:00am-10:00pm</p>
-                <ul class="list">
+                <ul class="opening-hours-list">
                     <li class="hidden">List of payments</li>
                     <li><span aria-label="Credit card" role="img" class="item"><i class="far fa-credit-card"></i></span></li>
                     <li><span aria-label="PayPal" role="img" class="item"><i class="fab fa-cc-paypal"></i></span></li>

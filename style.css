@@ -76,7 +76,7 @@ section {
 
 .yeseva-one.headline {
     font-size: 90px;
-    line-height: 1.2;   
+    line-height: 1.31;   
 }
 
 .yeseva-one.price {
@@ -95,7 +95,7 @@ section {
   
 .lato {
     font-size: 18px;
-    line-height: 1.2;
+    line-height: 1.25;
     color: rgba(255, 255, 255, 1);
     font-weight: lighter;
     font-family: 'Lato', sans-serif;
@@ -103,7 +103,7 @@ section {
 
 .lato.description {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.54;
     color: rgba(76, 76, 76, 1);
 }
 
@@ -127,97 +127,118 @@ section {
 /* Header */
 
 header {
-    box-sizing: content-box;
     margin: 0;
     background-image: url(./img/Header/header_bg_shadow.png), url(./img/Header/header_bg.jpg);
     background-color: rgba(44, 44, 44, 1);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: grid;
 }
 
 .header-logo-nav {
     display: flex;
-    justify-content: flex-start;
-    padding: 50px 175px 0 175px;
-    margin: 0 0 140px 0;
+    flex-direction: row;
+
+    margin: 0;
 }
 
 .logo {
-    margin-right: 250px;
+    padding: 8px 0 0 179px;
+    margin: 0 239px 0 0;
 }
 
 .website-navigation {
+    padding-top: 20px;
+    margin: 0;
     display: flex;
-    justify-content: space-between;
-    align-content: center;
-    flex-grow: 1;
+    align-items: center;
 }
 
 .list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
+    margin: 0 20px 0 0;
     padding: 0;
-    margin-right: 20px;
-    flex-grow: 1;
+}
+
+.list li {
+    margin-right: 51px;
+}
+
+.list li:last-child {
+    margin-right: 0;
 }
 
 .socials {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
     margin: 0;
     padding: 0;
-    margin-right: 25px;
 }
 
 .socials .item {
     color: rgba(204, 153, 0, 1);
-    margin-right: 15px;
+    margin-right: 18px;
 }
 
-.header-headline-booking .headline {
-    padding: 0 315px 0 315px;
-    margin: 0 0 150px 0;
+.header-headline {
+    padding: 115px 0 0 0;
+    margin: 0 auto 0 auto;
+    width: 1000px;
+}
+
+.yeseva-one.headline {
+    margin: 0;
+}
+
+.header-booking {
+    padding: 120px 0 0 0;
+    margin: 0 0 158px 0;
 }
 
 .list.booking {
-    padding: 0 610px 0 610px;
+    margin: 0 auto 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .booking li {
     text-transform: uppercase;
-    margin: 0 0 145px 0;
+    margin-right: 133px;
 }
 /* About the restaurant  */
 
 .about-restaurant {
     background-image: url(./img/decoration/pattern.png), url(./img/decoration/bg.jpg);
     background-color:rgba(255, 255, 255, 1) ;
-    padding: 100px 175px 100px 175px;
+    padding: 55px 0 30px 0;
     display: flex;
     flex-direction: row;
 }
 
 .restaurant-description {
-    padding: 0 85px 0 110px;
+    box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
+    width: 739px;
+    padding: 54px 0 0 260px;
 }
 
-.restaurant-description .description{
+.restaurant-description .title {
+    margin: 0 0 73px 0;
+}
+
+.restaurant-description .description {
+    text-align: center;
     margin: 0;
+    padding: 0 20px 0 20px;
 }
 
-.restaurant-description img {
-    align-self: flex-start;
-    margin-left: 80px;
+.picture-chef {
+    padding: 47px 0 0 70px;
 }
 
 /* About the ingredients */
@@ -225,75 +246,153 @@ header {
 .about-ingredients {
     background-image: url(./img/Ingridients/ingr_bg.jpg);
     background-color: rgba(75, 116, 0, 1);
-    padding: 100px 215px 100px 815px;
+    padding: 100px 0 103px 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-.ingredients-group .description {
-    color: rgba(255, 255, 255, 0.922);
-    margin: 0 0 75px 0;
-}
-
 .ingredients-group {
-    padding: 90px 80px 75px 80px;
+    width: 570px;
+    height: 470px;
+    padding: 86px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .ingredients-group .title {
-    margin: 0 0 80px 0;
+    margin: 0;
+    color: rgba(255, 255, 255, 1);
+}
+
+.ingredients-group .description {
+    line-height: 1.55;
+    text-align: center;
+    padding: 70px 70px 0 70px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.922);
+}
+.ingredients-group .list {
+    padding-top: 67px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+}
+.ingredients-group .item {
+    margin-right: 30px
 }
 
 /* Restaurant menu */
 
 .restaurant-menu {
+    padding-bottom: 62px;
     background-image: url(./img/decoration/pattern_menu.png), url(./img/decoration/background_menu.jpg);
     background-color:rgba(255, 255, 255, 1);
-    padding: 100px 285px 100px 285px;
-    display: flex;
+    /* padding: 107px 285px 100px 280px; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.restaurant-menu th {
-    padding: 0 0 75px 0;
+    justify-content: space-between; */
 }
 
 .restaurant-menu .title {
-    margin: 0 0 75px 0;
+    padding: 0 0 75px 0;
+}
+
+.restaurant-menu .description {
+    padding-bottom: 30px;
 }
 
 .yeseva-one.price {
-    padding: 0 0 30px 0;
+    padding: 1px 0 18px 2px;
 }
 
-.lato.description {
-    padding: 0 0 45px 0;
+.special {
+    position:absolute;
+}
+
+.appetisers-salads {
+    margin: 0;
+    padding: 108px 0 0 280px;
 }
 
 .appetisers {
-    order: 0;
-    align-self: flex-start;
+    width: 100%;
+    padding-right: 83px;
+    /* order: 0;
+    flex-grow: 1; */
+}
+
+.appetisers tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appetisers .title {
+    padding-left: 120px;
 }
 
 .salads {
-    order: 3;
-    align-self: flex-end;
+    width: 100%;
+    padding: 35px 83px 0 0;
+    /* order: 2;
+    padding-top: 35px;
+    flex-grow: 1; */
+}
+
+.salads tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.salads .title {
+    padding-left: 157px;
+}
+
+.startes-main-dishes {
+    margin: 0;
+    padding: 108px 0 0 78px;
 }
 
 .startes {
-    order: 2;
-    margin: 0;
-    align-self: flex-start;
+    padding: 0 283px 0 0;
+    width: 100%;
+}
+
+.startes tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.startes .title {
+    padding-left: 145px;
 }
 
 .main-dishes {
-    order: 4;
-    align-self: flex-end;
-
+    padding: 0 283px 0 0;
+    width: 100%;
 }
+
+.main-dishes .title {
+    padding: 34px 0 75px 108px;
+}
+
+.main-dishes tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* Guest reviews */
 
 .guest-reviews {
@@ -303,15 +402,16 @@ header {
 }
 
 .reviews-group {
-    padding: 80px 70px 100px 30px;
+    padding: 49px 70px 92px 18px;
     display: flex;
     flex-direction: column;
+    background-color: black;
 }
 
 .guest-reviews .title {
     line-height: 1.2;   
     color: rgba(255, 255, 255, 1);
-    margin: 0 0 85px 0;
+    margin: 26px 0 59px 52px;
 }
 
 .quote-sign {
@@ -320,13 +420,13 @@ header {
     color: rgba(242, 244, 244, 0.471);
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    margin: 0 15px 0 0;
+    padding: 8px 0 0 10px;
 }   
 
 .review-br {
     display: block; 
     content: ""; 
-    margin-bottom: 55px;
+    margin-bottom: 20px;
  }
 
 .review {
@@ -346,18 +446,26 @@ header {
     background-color:rgba(255, 255, 255, 1);
     display: flex;
     flex-direction: row;
-    padding: 100px 285px 100px 215px;
+    padding: 84px 285px 83px 175px;
+}
+
+.reservations ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
 }
 
 .reservations-img-one {
-    margin: 0 30px 0 0;
+    margin-right: 30px;
 }
 
 .reservations-img-two {
-    margin: 0 100px 0 0;
+    margin-right: 100px;
 }
 
 .reservations-group {
+    padding-top: 22px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -365,23 +473,21 @@ header {
 }
 
 .reservations .title {
-    margin: 0 0 80px 0;
+    margin-bottom: 73px;
 }
 
-
 .reservations .description {
-    margin: 0;
+    margin: 0 0 10px 0;
     padding: 0;
     text-align: center;
 }
-
 .reservations .list {
     margin: 0;
 }
 
 .book-table {
-    padding: 25px 0 0 0;
-    margin: 0 0 30px 0;
+    padding: 27px 0 0 0;
+    margin: 0 0 32px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -391,45 +497,61 @@ header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 0 0 30px 0;
+    margin: 0;
 }
 
 .email-input {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 0 0 30px 0;
+    margin: 0;
 }
 
 .date-input {
+    padding-top: 27px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+.date-input .open-sans {
+    margin-bottom: 4px;
 }
 
 .number-input {
+    padding-top: 27px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
+.number-input .open-sans {
+    margin-bottom: 4px;
+    padding-left: 1px;
+}
+
 #party-number {
-    height: 39px;
-    width: 208px;
+    height: 36px;
+    width: 200px;
+}
+
+#date {
+    height: 32px;
+    width: 195px;
 }
 
 label {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 input {
-    height: 35px;
-    width: 200px;
+    height: 30px;
+    width: 192px;
 }
 
 button {
-    height: 35px;
-    width: 200px;
+    height: 36px;
+    width: 202px;
 }
 
 /* Footer */
@@ -441,15 +563,18 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 50px 285px 50px 215px;
+    padding: 58px 0 53px 0;
 }
 
-footer .list {
+.footer-list {
     margin: 0;
+    padding: 0;
+    list-style: none;
     display: flex;
+    flex-direction: row;
 }
 
-.list .item {
+.footer-list .item {
     color: rgba(255, 255, 255, 1);
 }
 
@@ -457,40 +582,58 @@ footer .list {
     display: flex;
     flex-direction: column;
     width: 33.33%;
+    padding: 0 0 0 162px;
+    margin: 0;
 }
 
-.about-us span {
-    margin: 0 0 65px 0;
+.about-us .footer-headline {
+    padding-left: 27px;
+    margin: 0;
 }
 
 .about-us p {
     margin: 0;
+    padding: 52px 40px 0 64px;
 }
 
 .opening-hours {
+    margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     width: 33.33%;
+    padding: 0 0 0 90px;
 }
 
-.opening-hours span {
-    margin: 0 0 65px 0;
+.opening-hours .footer-headline {
+    padding-left: 22px;
+    margin: 0;
 }
 
 .opening-hours p {
-    margin: 0 0 55px 0;
+    margin: 0;
+    padding-top: 53px;
+}
+
+.opening-hours-list {
+    padding-left: 44px;
+    padding-top: 51px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .opening-hours .item {
-    margin: 0 10px 0 0;
+    text-decoration: none;
+    margin-right: 15px;
 }
 
 .our-location {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 33.33%;
 }
 
