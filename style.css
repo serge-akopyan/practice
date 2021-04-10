@@ -7,7 +7,7 @@ font-family: 'Yeseva One', cursive; */
 
 body {
     margin: 0;
-    width: 1600px;
+    width: 100%;
 }
 
 section {
@@ -40,6 +40,12 @@ section {
     margin: 0;
 }
 
+.divider {
+    position: absolute;
+    margin: auto;
+    width: 232px;
+    height: 43px;
+}
 
 /* Fonts */
 
@@ -136,54 +142,78 @@ header {
     display: grid;
 }
 
+header .divider {
+    top: 417px; 
+    bottom: 0; 
+    left: 6px; 
+    right: 0;
+}
+
 .header-logo-nav {
     display: flex;
     flex-direction: row;
-
+    justify-content: start;
+    padding-left: 392px;
     margin: 0;
 }
 
 .logo {
-    padding: 8px 0 0 179px;
-    margin: 0 239px 0 0;
+    width: 156px;
+    height: 92px;
+    padding: 8px 0 0 0;
+    margin: 0 225px 0 0;
 }
 
 .website-navigation {
-    padding-top: 20px;
     margin: 0;
     display: flex;
     align-items: center;
 }
 
-.list {
+.list.gentium-book {
+    height: 100%;
     display: flex;
     flex-direction: row;
-    margin: 0 20px 0 0;
+    margin: 0 8px 0 0;
     padding: 0;
 }
 
-.list li {
-    margin-right: 51px;
+.list.gentium-book li {
+    padding: 49px 13px 0 13px;
+    margin-right: 25px;
 }
 
-.list li:last-child {
+.list.gentium-book li:hover {
+    background: rgb(7,53,150);
+    background: linear-gradient(180deg, rgba(255,255,255,0.71) 3%, rgba(0,0,0,0) 3%);
+}
+
+.list.gentium-book li:last-child {
     margin-right: 0;
 }
 
 .socials {
+    height: 100%;
     display: flex;
     align-items: center;
     margin: 0;
     padding: 0;
 }
 
+.socials li {
+    height: 100%;
+    padding-top: 105px;
+}
+
 .socials .item {
     color: rgba(204, 153, 0, 1);
-    margin-right: 18px;
+    font-size: 18px;
+    margin-right: 16px;
 }
 
 .header-headline {
-    padding: 115px 0 0 0;
+    position: relative;
+    padding: 88px 0 0 0;
     margin: 0 auto 0 auto;
     width: 1000px;
 }
@@ -193,20 +223,31 @@ header {
 }
 
 .header-booking {
-    padding: 120px 0 0 0;
-    margin: 0 0 158px 0;
+    padding: 103px 0 141px 0;
 }
 
 .list.booking {
+    padding: 0 770px 0 770px;
     margin: 0 auto 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .booking li {
+    margin-right: 0;
+    background-color: rgba(0, 0, 0, 0.702);
     text-transform: uppercase;
-    margin-right: 133px;
+    padding: 15px 50px 17px 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 1);
 }
+
+.booking li:last-child {
+    border-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.278);
+}
+  
 /* About the restaurant  */
 
 .about-restaurant {

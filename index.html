@@ -12,17 +12,17 @@
 </head>
 <body>
     <header>
-        <section class="header-logo-nav">
+        <section class="header-logo-nav" id="header-logo-nav">
             <h1 class="hidden">Lambda restaurant</h1>
             <img src="./img/Header/Logo.png" alt="restaurant logo" class="logo">
             <nav aria-label="website navigation" class="website-navigation">
                 <ul class="list gentium-book">
-                    <li><a href="#" class="item">Home</a></li>
-                    <li><a href="#" class="item">About</a></li>
-                    <li><a href="#" class="item">Igredients</a></li>
-                    <li><a href="#" class="item">Menu</a></li>
-                    <li><a href="#" class="item">Reviews</a></li>
-                    <li><a href="#" class="item">Reservations</a></li>
+                    <li><a href="#header-logo-nav" class="item">Home</a></li>
+                    <li><a href="#about-restaurant" class="item">About</a></li>
+                    <li><a href="#about-ingredients" class="item">Igredients</a></li>
+                    <li><a href="#restaurant-menu" class="item">Menu</a></li>
+                    <li><a href="#guest-reviews" class="item">Reviews</a></li>
+                    <li><a href="#reservations" class="item">Reservations</a></li>
                 </ul>
                 <ul class="socials">
                     <li class="hidden">social media links</li>
@@ -33,16 +33,17 @@
         </section>
         <section class="header-headline">
             <h2 class="headline yeseva-one">the right ingredients for the right food</h2>
+            <img src="./img/decoration/divider.svg" alt="decoration" class="divider">
         </section>
         <section class="header-booking">
             <ul class="list booking">
-                <li><a href="#" accesskey="b" class="lato item">Book a table</a></li>
-                <li><a href="#" class="lato item">See the menu</a></li>
+                <li><a href="#reservations" accesskey="b" class="lato item">Book a table</a></li>
+                <li><a href="#restaurant-menu" class="lato item">See the menu</a></li>
             </ul>
         </section>
     </header>
     <main>
-        <section aria-label="about the restaurant" class="about-restaurant">
+        <section aria-label="about the restaurant" class="about-restaurant" id="about-restaurant">
             <div class="restaurant-description">
                 <h2 class="title yeseva-one">Just the right food</h2>
                 <p class="lato description">
@@ -54,7 +55,7 @@
             </div>
             <img src="./img/About/dish_bg.png" alt="picture of a dish">
         </section>
-        <section aria-label="about the ingredients" class="about-ingredients">
+        <section aria-label="about the ingredients" class="about-ingredients" id="about-ingredients">
             <div class="ingredients-group">
                 <h2 class="title yeseva-one">Fine ingredients</h2>
                 <p class="lato description">
@@ -69,7 +70,7 @@
                 </ul>
             </div>
         </section>
-        <section aria-label="restaurant menu" class="restaurant-menu">
+        <section aria-label="restaurant menu" class="restaurant-menu" id="restaurant-menu">
             <h2 class="hidden">Menu</h2>
             <div class="appetisers-salads">
                 <table role="menu" aria-label="Appetisers" class="appetisers">
@@ -150,7 +151,7 @@
                 </table>
             </div>
         </section>
-        <section class="guest-reviews">
+        <section class="guest-reviews" id="guest-reviews">
             <div class="reviews-group">
                 <h2 class="title yeseva-one">Guest Reviews</h2>
                 <blockquote class="food-inc-quote">
@@ -164,7 +165,7 @@
                 
             </div>
         </section>
-        <section aria-label="about the food" class="reservations">
+        <section aria-label="about the food" class="reservations" id="reservations">
             <ul>
                 <li><img src="./img/Reservations/reserv_1.jpg" alt="picture of the food" class="reservations-img-one"></li>
                 <li><img src="./img/Reservations/reserv_2.jpg" alt="picture of the food" class="reservations-img-two"></li>
