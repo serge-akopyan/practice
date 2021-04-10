@@ -43,9 +43,9 @@ section {
 
 .divider {
     position: absolute;
-    margin: auto;
+    margin: 0 auto 0 auto;
     width: 232px;
-    height: 43px;
+    height: 41px;
 }
 
 /* Fonts */
@@ -57,9 +57,10 @@ section {
 }
 
 .gentium-book.list {
-    font-size: 21px;
+    font-size: 19px;
     line-height: 1.2;
     text-align: justify;
+    
 }
 
 .gentium-book.review {
@@ -82,8 +83,9 @@ section {
 }
 
 .yeseva-one.headline {
-    font-size: 90px;
-    line-height: 1.31;   
+    font-size: 83px;
+    line-height: 1.35;
+    text-align: center;   
 }
 
 .yeseva-one.price {
@@ -106,6 +108,10 @@ section {
     color: rgba(255, 255, 255, 1);
     font-weight: lighter;
     font-family: 'Lato', sans-serif;
+}
+
+.lato.item {
+    font-size: 17px;
 }
 
 .lato.description {
@@ -143,13 +149,14 @@ header {
 }
 
 header .divider {
-    top: 417px; 
+    top: 333px; 
     bottom: 0; 
-    left: 6px; 
+    left: 5px; 
     right: 0;
 }
 
 .header-logo-nav {
+    padding-left: 170px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -158,10 +165,10 @@ header .divider {
 }
 
 .logo {
-    width: 156px;
-    height: 92px;
+    width: 148px;
+    height: 86px;
     padding: 8px 0 0 0;
-    margin: 0 225px 0 0;
+    margin: 0 215px 0 0;
 }
 
 .website-navigation {
@@ -174,13 +181,14 @@ header .divider {
     height: 100%;
     display: flex;
     flex-direction: row;
-    margin: 0 8px 0 0;
+    margin: 0 5px 0 0;
     padding: 0;
 }
 
 .list.gentium-book li {
-    padding: 49px 13px 0 13px;
-    margin-right: 25px;
+    letter-spacing: 0.5px;
+    padding: 46px 13px 0 13px;
+    margin-right: 22px;
 }
 
 .list.gentium-book li:hover {
@@ -202,41 +210,44 @@ header .divider {
 
 .socials li {
     height: 100%;
-    padding-top: 105px;
+    padding-top: 96px;
 }
 
 .socials .item {
     color: rgba(204, 153, 0, 1);
     font-size: 18px;
-    margin-right: 16px;
+    margin-right: 14px;
 }
 
 .header-headline {
     position: relative;
-    padding: 88px 0 0 0;
-    margin: 0 auto 0 auto;
+    padding: 86px 0 0 0;
+    margin: 0;
 }
 
 .yeseva-one.headline {
+    letter-spacing: 1.2px;
+    margin: 0 auto 0 auto;
+    padding: 0 245px 0 245px;
     margin: 0;
 }
 
 .header-booking {
-    padding: 103px 0 141px 0;
+    padding: 97px 0 135px 0;
 }
 
 .list.booking {
     padding: 0;
-    margin: 0 auto 0 auto;
+    margin: 0;
     display: flex;
     justify-content: center;
 }
 
 .booking li {
-    margin-right: 32px;
+    margin-right: 31px;
     background-color: rgba(0, 0, 0, 0.702);
     text-transform: uppercase;
-    padding: 15px 50px 15px 50px;
+    padding: 15px 47px 15px 47px;
     border-style: solid;
     border-width: 1px;
     border-color: rgba(0, 0, 0, 1);
