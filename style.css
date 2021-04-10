@@ -7,6 +7,7 @@ font-family: 'Yeseva One', cursive; */
 
 body {
     margin: 0;
+    padding: 0;
     width: 100%;
 }
 
@@ -139,7 +140,6 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: grid;
 }
 
 header .divider {
@@ -150,10 +150,10 @@ header .divider {
 }
 
 .header-logo-nav {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: start;
-    padding-left: 392px;
     margin: 0;
 }
 
@@ -215,7 +215,6 @@ header .divider {
     position: relative;
     padding: 88px 0 0 0;
     margin: 0 auto 0 auto;
-    width: 1000px;
 }
 
 .yeseva-one.headline {
@@ -227,23 +226,24 @@ header .divider {
 }
 
 .list.booking {
-    padding: 0 770px 0 770px;
+    padding: 0;
     margin: 0 auto 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .booking li {
-    margin-right: 0;
+    margin-right: 32px;
     background-color: rgba(0, 0, 0, 0.702);
     text-transform: uppercase;
-    padding: 15px 50px 17px 50px;
+    padding: 15px 50px 15px 50px;
     border-style: solid;
     border-width: 1px;
     border-color: rgba(0, 0, 0, 1);
 }
 
 .booking li:last-child {
+    margin-right: 0;
     border-color: rgba(255, 255, 255, 1);
     background-color: rgba(255, 255, 255, 0.278);
 }
