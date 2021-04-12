@@ -24,15 +24,11 @@ section {
     display: none;
 }
 
-.list {
+ul {
     list-style: none;
 }
 
-.socials {
-    list-style: none;
-}
-
-.item {
+a {
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
 }
@@ -42,8 +38,6 @@ section {
 }
 
 .divider {
-    position: absolute;
-    margin: 0 auto 0 auto;
     width: 232px;
     height: 41px;
 }
@@ -56,11 +50,13 @@ section {
     font-family: 'Gentium Book Basic', serif;
 }
 
-.gentium-book.list {
+.gentium-book-list {
     font-size: 19px;
     line-height: 1.2;
     text-align: justify;
-    
+    color: rgba(221, 224, 223, 1);
+    font-weight: bold;
+    font-family: 'Gentium Book Basic', serif;
 }
 
 .gentium-book.review {
@@ -82,9 +78,13 @@ section {
     color: rgba(204, 153, 0, 1);
 }
 
-.yeseva-one.headline {
+.yeseva-one-headline {
     font-size: 83px;
     line-height: 1.35;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.922);
+    font-weight: lighter;
+    font-family: 'Yeseva One', cursive;
     text-align: center;   
 }
 
@@ -110,8 +110,12 @@ section {
     font-family: 'Lato', sans-serif;
 }
 
-.lato.item {
+.lato-item {
     font-size: 17px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 1);
+    font-weight: lighter;
+    font-family: 'Lato', sans-serif;
 }
 
 .lato.description {
@@ -141,34 +145,31 @@ section {
 
 header {
     margin: 0;
+    padding-bottom: 151px;
     background-image: url(./img/Header/header_bg_shadow.png), url(./img/Header/header_bg.jpg);
     background-color: rgba(44, 44, 44, 1);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    text-align: center;
 }
 
 header .divider {
-    top: 333px; 
-    bottom: 0; 
-    left: 5px; 
-    right: 0;
+    margin-top: 23px;
 }
 
 .header-logo-nav {
-    padding-left: 170px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     margin: 0;
 }
 
 .logo {
     width: 148px;
     height: 86px;
-    padding: 8px 0 0 0;
-    margin: 0 215px 0 0;
+    margin: 8px 215px 0 0;
 }
 
 .website-navigation {
@@ -177,7 +178,7 @@ header .divider {
     align-items: center;
 }
 
-.list.gentium-book {
+.website-navigation-list {
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -185,79 +186,66 @@ header .divider {
     padding: 0;
 }
 
-.list.gentium-book li {
+.website-navigation-list li {
     letter-spacing: 0.5px;
     padding: 46px 13px 0 13px;
     margin-right: 22px;
 }
 
-.list.gentium-book li:hover {
-    background: rgb(7,53,150);
+.website-navigation-list li:hover {
+    background: rgba(0,0,0,0);
     background: linear-gradient(180deg, rgba(255,255,255,0.71) 3%, rgba(0,0,0,0) 3%);
 }
 
-.list.gentium-book li:last-child {
+.website-navigation-list li:last-child {
     margin-right: 0;
 }
 
-.socials {
-    height: 100%;
+.header-socials-list {
     display: flex;
     align-items: center;
-    margin: 0;
+    margin: 22px 0 0 0;
     padding: 0;
 }
 
-.socials li {
-    height: 100%;
-    padding-top: 96px;
-}
-
-.socials .item {
+.header-socials-list a {
     color: rgba(204, 153, 0, 1);
     font-size: 18px;
     margin-right: 14px;
 }
 
 .header-headline {
-    position: relative;
-    padding: 86px 0 0 0;
-    margin: 0;
-}
-
-.yeseva-one.headline {
     letter-spacing: 1.2px;
-    margin: 0 auto 0 auto;
-    padding: 0 245px 0 245px;
-    margin: 0;
-}
-
-.header-booking {
-    padding: 97px 0 135px 0;
-}
-
-.list.booking {
+    margin: 108px auto 0 auto;
     padding: 0;
-    margin: 0;
+    width: 1000px;
+}
+
+.booking-list {
+    padding: 0;
+    margin: 46px auto 0 auto;
     display: flex;
     justify-content: center;
 }
 
-.booking li {
+.booking-list li:first-child {
     margin-right: 31px;
+}
+
+.booking-list-link {
+    box-sizing: border-box;
+    margin-right: 0;
     background-color: rgba(0, 0, 0, 0.702);
     text-transform: uppercase;
     padding: 15px 47px 15px 47px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(0, 0, 0, 1);
 }
 
-.booking li:last-child {
-    margin-right: 0;
-    border-color: rgba(255, 255, 255, 1);
+.booking-list-link:hover {
     background-color: rgba(255, 255, 255, 0.278);
+    border-color: rgba(255, 255, 255, 1);
 }
+
   
 /* About the restaurant  */
 
