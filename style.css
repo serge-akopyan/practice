@@ -42,6 +42,11 @@ a {
     height: 41px;
 }
 
+.divider-thin {
+    width: 247px;
+    height: 24px;
+}
+
 /* Fonts */
 
 .gentium-book {
@@ -59,10 +64,13 @@ a {
     font-family: 'Gentium Book Basic', serif;
 }
 
-.gentium-book.review {
+.gentium-book-review {
     font-size: 25px;
     line-height: 1.8;
     text-align: center;
+    color: rgba(221, 224, 223, 1);
+    font-weight: bold;
+    font-family: 'Gentium Book Basic', serif;
 }
 
 .yeseva-one {
@@ -72,7 +80,10 @@ a {
     text-align: center;
 }
 
-.yeseva-one.title {
+.yeseva-one-title {
+    font-weight: lighter;
+    font-family: 'Yeseva One', cursive;
+    text-align: center;
     font-size: 36px;
     line-height: 0.667;
     color: rgba(204, 153, 0, 1);
@@ -118,10 +129,13 @@ a {
     font-family: 'Lato', sans-serif;
 }
 
-.lato.description {
+.lato-description {
     font-size: 16px;
     line-height: 1.54;
+    font-weight: lighter;
+    font-family: 'Lato', sans-serif;
     color: rgba(76, 76, 76, 1);
+    text-align: center;
 }
 
 .open-sans {
@@ -145,7 +159,7 @@ a {
 
 header {
     margin: 0;
-    padding-bottom: 151px;
+    padding-bottom: 167px;
     background-image: url(./img/Header/header_bg_shadow.png), url(./img/Header/header_bg.jpg);
     background-color: rgba(44, 44, 44, 1);
     background-repeat: no-repeat;
@@ -252,33 +266,40 @@ header .divider {
 .about-restaurant {
     background-image: url(./img/decoration/pattern.png), url(./img/decoration/bg.jpg);
     background-color:rgba(255, 255, 255, 1) ;
-    padding: 55px 0 30px 0;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.restaurant-description {
-    box-sizing: border-box;
+.about-restaurant-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    width: 739px;
-    padding: 54px 0 0 260px;
+    width: 430px;
+    height: 470px;
+    margin-left: 70px;
 }
 
-.restaurant-description .title {
-    margin: 0 0 73px 0;
-}
-
-.restaurant-description .description {
-    text-align: center;
+.about-restaurant-title {
     margin: 0;
-    padding: 0 20px 0 20px;
+}
+
+.about-restaurant-description {
+    margin: 0;
 }
 
 .picture-chef {
-    padding: 47px 0 0 70px;
+    width: 219px;
+    height: 221px;
+    align-self: center;
+    margin: 30px 0 0 60px;
+}
+
+.picture-dish {
+    margin: 50px 0 0 0;
+    width: 621px;
+    height: 625px;
 }
 
 /* About the ingredients */
@@ -286,45 +307,53 @@ header .divider {
 .about-ingredients {
     background-image: url(./img/Ingridients/ingr_bg.jpg);
     background-color: rgba(75, 116, 0, 1);
-    padding: 100px 0 103px 600px;
+    padding: 93px 0 68px 0;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
 }
 
-.ingredients-group {
+.ingredients-container {
+    margin: 0 0 0 600px;
+    box-sizing: border-box;
     width: 570px;
-    height: 470px;
-    padding: 86px 0 0 0;
+    height: 557px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: flex-start;
+    background-color:rgba(0, 0, 0, 0.67);
 }
 
-.ingredients-group .title {
-    margin: 0;
+.ingredients-container .yeseva-one-title {
+    margin: 80px 0 0 0;
     color: rgba(255, 255, 255, 1);
 }
 
-.ingredients-group .description {
+.ingredients-container .divider-thin {
+    margin: 22px 0 0 0;
+}
+
+.ingredients-container p {
     line-height: 1.55;
     text-align: center;
-    padding: 70px 70px 0 70px;
-    margin: 0;
+    margin: 20px 70px 0 70px;
     color: rgba(255, 255, 255, 0.922);
 }
-.ingredients-group .list {
-    padding-top: 67px;
-    margin: 0;
+.ingredients-picutre-list {
+    margin: 58px 0 0 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     justify-content: center;
 }
-.ingredients-group .item {
-    margin-right: 30px
+
+.ingredients-picutre-list li {
+    margin-right: 25px;
+}
+
+.ingredients-image {
+    height: 110px;
+    width: 110px;
 }
 
 /* Restaurant menu */
@@ -438,29 +467,47 @@ header .divider {
 .guest-reviews {
     background-image: url(./img/Quote/quote_bg.jpg);
     background-color: rgba(184, 98, 0, 1);
-    padding: 100px 415px 100px 415px;
+    padding: 100px 0 100px 0;
 }
 
-.reviews-group {
-    padding: 49px 70px 92px 18px;
+.reviews-container {
+    margin: 0 auto;
+    width: 770px;
+    height: 557px;
     display: flex;
     flex-direction: column;
-    background-color: black;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.85)
 }
 
-.guest-reviews .title {
+.food-inc-quote {
+    margin: 0;
+    position: relative;
+}
+
+.food-inc-quote .gentium-book-review {
+    margin: 35px 70px 0 70px;
+}
+
+.reviews-container .yeseva-one-title {
     line-height: 1.2;   
     color: rgba(255, 255, 255, 1);
-    margin: 26px 0 59px 52px;
+    margin: 80px 0 0 0;
+}
+
+.reviews-container .divider-thin {
+    margin: 22px 0 0 0;
 }
 
 .quote-sign {
+    position: absolute;
     font-size: 96px;
-    line-height: 0.469;
+    left: 25px;
+    top: 10px;
     color: rgba(242, 244, 244, 0.471);
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    padding: 8px 0 0 10px;
+    padding: 0;
 }   
 
 .review-br {
@@ -468,16 +515,6 @@ header .divider {
     content: ""; 
     margin-bottom: 20px;
  }
-
-.review {
-    margin: 0;
-}
-
-.food-inc-quote {
-    margin: 0;
-    display: flex;
-    justify-content: flex-start;
-}
 
 /* Reservations */
 
