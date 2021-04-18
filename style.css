@@ -99,11 +99,13 @@ a {
     text-align: center;   
 }
 
-.yeseva-one.price {
+.yeseva-one-price {
     font-size: 21px;
     line-height: 1.143;
     color: rgba(200, 159, 45, 1);
     text-align: justify;
+    font-weight: lighter;
+    font-family: 'Yeseva One', cursive;
 }
 
 .yeseva-one.footer-headline {
@@ -159,7 +161,7 @@ a {
 
 header {
     margin: 0;
-    padding-bottom: 167px;
+    padding-bottom: 151px;
     background-image: url(./img/Header/header_bg_shadow.png), url(./img/Header/header_bg.jpg);
     background-color: rgba(44, 44, 44, 1);
     background-repeat: no-repeat;
@@ -362,104 +364,91 @@ header .divider {
     padding-bottom: 62px;
     background-image: url(./img/decoration/pattern_menu.png), url(./img/decoration/background_menu.jpg);
     background-color:rgba(255, 255, 255, 1);
-    /* padding: 107px 285px 100px 280px; */
     display: grid;
     grid-template-columns: 50% 50%;
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between; */
 }
 
-.restaurant-menu .title {
-    padding: 0 0 75px 0;
+table {
+    border-collapse: collapse;
+    width: 105%;
 }
 
-.restaurant-menu .description {
-    padding-bottom: 30px;
+tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-.yeseva-one.price {
-    padding: 1px 0 18px 2px;
+.menu-decoration {
+    justify-content: center;
+    margin: 0 0 10px 0;
 }
 
-.special {
-    position:absolute;
+.menu-title {
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 10px 0;
+}
+
+.price {
+    padding-bottom: 7px;
+    margin: 0 0 7px 0;
+    border: 1px;
+    border-style: none none solid none;
+    border-color: rgba(200, 159, 45, 1);
+}
+
+.menu-description {
+    padding: 0 0 26px 0;
 }
 
 .appetisers-salads {
-    margin: 0;
-    padding: 108px 0 0 280px;
+    margin: 103px 100px 0 auto;
 }
 
 .appetisers {
-    width: 100%;
-    padding-right: 83px;
-    /* order: 0;
-    flex-grow: 1; */
-}
-
-.appetisers tr {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.appetisers .title {
-    padding-left: 120px;
-}
-
-.salads {
-    width: 100%;
-    padding: 35px 83px 0 0;
-    /* order: 2;
-    padding-top: 35px;
-    flex-grow: 1; */
-}
-
-.salads tr {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.salads .title {
-    padding-left: 157px;
+    margin: 0 0 35px 0;
 }
 
 .startes-main-dishes {
-    margin: 0;
-    padding: 108px 0 0 78px;
+    margin: 103px auto 0 78px;
 }
 
 .startes {
-    padding: 0 283px 0 0;
+    margin: 0 0 35px 0;
+}
+
+.special {
+    display: block;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.special::before {
+    padding: 5px 10px;
+    margin: -5px -10px;
+    content: "";
+    position: absolute;
     width: 100%;
+    height: 100%;
+    border: 1px solid;
+    border-image: linear-gradient(90deg, rgba(204, 153, 0, 0.2) 20%, rgba(204, 153, 0, 0.8) 80%);
+    border-image-slice: 1;
+
 }
 
-.startes tr {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.startes .title {
-    padding-left: 145px;
-}
-
-.main-dishes {
-    padding: 0 283px 0 0;
-    width: 100%;
-}
-
-.main-dishes .title {
-    padding: 34px 0 75px 108px;
-}
-
-.main-dishes tr {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.special::after {
+    content: "Special";
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: lighter;
+    font-family: 'Lato', sans-serif;
+    background-image: url(./img/decoration/special-background.png);
+    padding: 2px 12px;
+    position: absolute;
+    right: -12px;
+    bottom: 72px;
 }
 
 /* Guest reviews */
@@ -467,7 +456,7 @@ header .divider {
 .guest-reviews {
     background-image: url(./img/Quote/quote_bg.jpg);
     background-color: rgba(184, 98, 0, 1);
-    padding: 100px 0 100px 0;
+    padding: 55px 0 107px 0;
 }
 
 .reviews-container {
