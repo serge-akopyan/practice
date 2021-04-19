@@ -364,25 +364,33 @@ header .divider {
     padding-bottom: 62px;
     background-image: url(./img/decoration/pattern_menu.png), url(./img/decoration/background_menu.jpg);
     background-color:rgba(255, 255, 255, 1);
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
 }
 
 table {
     border-collapse: collapse;
-    width: 105%;
+    width: 430px;
 }
 
 tr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    /* padding: 5px 10px; */
+}
+
+tbody {
+    padding: 5px 10px;
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 15px;
 }
 
 .menu-decoration {
     justify-content: center;
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
 }
 
 .menu-title {
@@ -394,48 +402,56 @@ tr {
 .price {
     padding-bottom: 7px;
     margin: 0 0 7px 0;
-    border: 1px;
-    border-style: none none solid none;
-    border-color: rgba(200, 159, 45, 1);
+    border-bottom: 1px solid rgba(200, 159, 45, 1);
 }
 
 .menu-description {
-    padding: 0 0 26px 0;
+    padding: 0;
 }
 
 .appetisers-salads {
-    margin: 103px 100px 0 auto;
+    margin: 0 140px 0 0;
 }
 
 .appetisers {
-    margin: 0 0 35px 0;
+    margin: 0 0 43px 0;
+}
+
+.appetisers tbody:first-child {
+    margin: 0;
+    padding: 0;
+}
+
+.salads tbody:first-child {
+    margin: 0;
+    padding: 0;
 }
 
 .startes-main-dishes {
-    margin: 103px auto 0 78px;
+    margin: 0;
 }
 
 .startes {
-    margin: 0 0 35px 0;
+    margin: 0 0 43px 0;
+}
+
+.startes tbody:first-child {
+    margin: 0;
+    padding: 0;
+}
+
+.main-dishes tbody:first-child {
+    margin: 0;
+    padding: 0;
 }
 
 .special {
     display: block;
     position: relative;
-    margin-bottom: 25px;
-}
-
-.special::before {
-    padding: 5px 10px;
-    margin: -5px -10px;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    margin-bottom: 15px;
     border: 1px solid;
     border-image: linear-gradient(90deg, rgba(204, 153, 0, 0.2) 20%, rgba(204, 153, 0, 0.8) 80%);
     border-image-slice: 1;
-
 }
 
 .special::after {
@@ -447,8 +463,8 @@ tr {
     background-image: url(./img/decoration/special-background.png);
     padding: 2px 12px;
     position: absolute;
-    right: -12px;
-    bottom: 72px;
+    right: -1px;
+    top: -21px;
 }
 
 /* Guest reviews */
@@ -512,112 +528,53 @@ tr {
     background-color:rgba(255, 255, 255, 1);
     display: flex;
     flex-direction: row;
-    padding: 84px 285px 83px 175px;
+    padding: 100px 285px 100px 175px;
 }
 
-.reservations ul {
+.reservations-images {
+    padding: 0;
+    margin: 0 100px 0 0;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: start;
 }
 
-.reservations-img-one {
+
+.reservations-images li:first-child {
     margin-right: 30px;
 }
 
-.reservations-img-two {
-    margin-right: 100px;
+.reservations-image {
+    width: 270px;
+    height: 507px;
+
 }
 
 .reservations-group {
-    padding-top: 22px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    width: 430px;
+    height: 507px;
 }
 
-.reservations .title {
-    margin-bottom: 73px;
+.reservations-group .yeseva-one-title {
+    margin: 0;
 }
 
-.reservations .description {
-    margin: 0 0 10px 0;
+.reservations-group .lato-description {
+    margin: 0;
     padding: 0;
     text-align: center;
 }
-.reservations .list {
-    margin: 0;
-}
 
 .book-table {
-    padding: 27px 0 0 0;
-    margin: 0 0 32px 0;
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.name-input {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0;
-}
-
-.email-input {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0;
-}
-
-.date-input {
-    padding-top: 27px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.date-input .open-sans {
-    margin-bottom: 4px;
-}
-
-.number-input {
-    padding-top: 27px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.number-input .open-sans {
-    margin-bottom: 4px;
-    padding-left: 1px;
-}
-
-#party-number {
-    height: 36px;
-    width: 200px;
-}
-
-#date {
-    height: 32px;
-    width: 195px;
-}
-
-label {
-    margin-bottom: 7px;
-}
-
-input {
-    height: 30px;
-    width: 192px;
-}
-
-button {
-    height: 36px;
-    width: 202px;
+    flex-direction: row;
 }
 
 /* Footer */
