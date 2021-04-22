@@ -149,12 +149,14 @@ a {
     text-align: left;
 }
 
-.open-sans.footer-description {
+.open-sans-footer-description {
     font-size: 16px;
     line-height: 1.5;
     color: rgba(255, 255, 255, 1);
     font-weight: lighter;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
 }
 
 /* Header */
@@ -528,7 +530,8 @@ tbody {
     background-color:rgba(255, 255, 255, 1);
     display: flex;
     flex-direction: row;
-    padding: 100px 285px 100px 175px;
+    padding: 100px 0 100px 0;
+    justify-content: center;
 }
 
 .reservations-images {
@@ -554,18 +557,22 @@ tbody {
 .reservations-group {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     width: 430px;
     height: 507px;
 }
 
 .reservations-group .yeseva-one-title {
-    margin: 0;
+    margin: 0 0 20px 0;
+}
+
+.reservations-group .divider {
+    margin: 0 0 25px 0;
 }
 
 .reservations-group .lato-description {
-    margin: 0;
+    margin: 0 0 0 0;
     padding: 0;
     text-align: center;
 }
@@ -574,7 +581,94 @@ tbody {
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reservations-br {
+    display: block; 
+    content: ""; 
+    margin-bottom: 8px;
+}
+
+input {
+    width: 180px;
+    height: 32px;
+}
+
+#date {
+    display: block;
+    height: 34px;
+}
+
+#party-number {
+    width: 186px;
+    height: 38px;
+}
+
+.name-email {
+    margin: 0 0 25px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.date-number {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.number-input {
+    width: 186px;
+}
+
+.fa-chevron-down:before {
+    content: "\f078";
+    pointer-events: none;
+    color: rgba(124, 124, 124, 1);
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+}
+
+::placeholder {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(124, 124, 124, 1);
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+.name-input {
+    width: 188px;
+}
+
+.email-input {
+    width: 188px;
+}
+
+button {
+    background-color: rgba(201, 161, 49, 1);
+    border: none;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    line-height: 1.2;
+    text-align: center;
+    width: 195px;
+    height: 70px;
+}
+
+#party-number {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 /* Footer */
