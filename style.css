@@ -599,11 +599,44 @@ input {
 #date {
     display: block;
     height: 34px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(124, 124, 124, 1);
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
 }
 
+#date::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.date-input {
+    position: relative;
+}
+
+.fa-calendar-alt:before {
+    content: "\f073";
+    position: absolute;
+    pointer-events: none;
+    color: rgba(124, 124, 124, 1);
+    right: 10px;
+    bottom: 10px;
+}
 #party-number {
     width: 186px;
     height: 38px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(124, 124, 124, 1);
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    
 }
 
 .name-email {
