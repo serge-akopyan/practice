@@ -211,35 +211,37 @@
                 Perfect materials and freshly baked food. <br class="reservations-br"> Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! 
                 Perfect materials and freshly baked food.
                 </p>
-                <form action="#" aria-label="book a table" class="book-table">
-                    <div class="name-email">
-                        <div class="name-input">
-                            <label for="your-name" class="open-sans">Name</label>
-                            <input type="text" placeholder="your name*" id="your-name">
+                <form action="#" aria-label="book a table">
+                    <div class="book-table">
+                        <div class="name-email">
+                            <div class="name-input">
+                                <label for="your-name" class="open-sans">Name</label>
+                                <input type="text" placeholder="your name*" id="your-name" required>
+                            </div>
+                            <div class="email-input">
+                                <label for="your-email" class="open-sans">Name</label>
+                                <input type="email" placeholder="your email*" id="your-email" required>
+                            </div>
                         </div>
-                        <div class="email-input">
-                            <label for="your-email" class="open-sans">Name</label>
-                            <input type="text" placeholder="your email*" id="your-email">
+                        <div class="date-number">
+                            <div class="date-input">
+                                <i class="fas fa-calendar-alt"></i>
+                                <label for="date" class="open-sans">Date</label>
+                                <input type="date" name="date" id="date" required>
+                            </div>
+                           <div class="number-input">
+                                <i class="fas fa-chevron-down"></i>
+                               <label for="party-number" class="open-sans">Party number</label>
+                               <select name="party number" id="party-number">
+                                   <option value="" disabled selected>Party number</option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                </select>
+                           </div>
                         </div>
                     </div>
-                    <div class="date-number">
-                        <div class="date-input">
-                            <i class="fas fa-calendar-alt"></i>
-                            <label for="date" class="open-sans">Date</label>
-                            <input type="date" name="date" id="date">
-                        </div>
-                       <div class="number-input">
-                            <i class="fas fa-chevron-down"></i>
-                           <label for="party-number" class="open-sans">Party number</label>
-                           <select name="party number" id="party-number">
-                               <option value="" disabled selected>Party number</option>
-                               <option value="1">1</option>
-                               <option value="2">2</option>
-                            </select>
-                       </div>
-                    </div>
+                    <button type="submit">Book now!</button>
                 </form>
-                <button type="submit">Book now!</button>
             </div>
         </section>
     </main>
@@ -247,30 +249,33 @@
         <ul role="none" class="footer-list">
             <li class="about-us">
                 <span class="yeseva-one footer-headline">About Us</span>
-                <p class="open-sans footer-description">Lambda's new and expanded Chelsea location represents a truly authentic <strong>Greek</strong> patisserie, 
+                <img src="./img/decoration/divider-thin.svg" alt="decoration" class="divider-thin">
+                <p class="open-sans-footer-description">Lambda's new and expanded Chelsea location represents a truly authentic <strong>Greek</strong> patisserie, 
                     featuring breakfasts of fresh croissants and steaming bowls of café.
-                    Lamda the best restaurant in town</p>
+                    <br>Lamda the best restaurant in town</p>
             </li>
             <li class="opening-hours">
                 <span class="yeseva-one footer-headline">Opening Hours</span>
-                <p class="open-sans footer-description"><strong>Mon-Thu:</strong> 7:00am-8:00pm<br><strong>Fri-Sun:</strong> 7:00am-10:00pm</p>
+                <img src="./img/decoration/divider-thin.svg" alt="decoration" class="divider-thin">
+                <p class="open-sans-footer-description"><strong>Mon-Thu:</strong> 7:00am-8:00pm<br><strong>Fri-Sun:</strong> 7:00am-10:00pm</p>
                 <ul class="opening-hours-list">
                     <li class="hidden">List of payments</li>
-                    <li><span aria-label="Credit card" role="img" class="item"><i class="far fa-credit-card"></i></span></li>
-                    <li><span aria-label="PayPal" role="img" class="item"><i class="fab fa-cc-paypal"></i></span></li>
-                    <li><span aria-label="Visa" role="img" class="item"><i class="fab fa-cc-visa"></i></span></li>
-                    <li><span aria-label="Discover card" role="img" class="item"><i class="fab fa-cc-discover"></i></span></li>
+                    <li><span aria-label="Credit card" role="img"><i class="far fa-credit-card"></i></span></li>
+                    <li><span aria-label="PayPal" role="img"><i class="fab fa-cc-paypal"></i></span></li>
+                    <li><span aria-label="Visa" role="img"><i class="fab fa-cc-visa"></i></span></li>
+                    <li><span aria-label="Discover card" role="img"><i class="fab fa-cc-discover"></i></span></li>
                 </ul>
             </li>
             <li class="our-location">
                 <span class="yeseva-one footer-headline">Our Location</span>
-                <p class="open-sans footer-description"><strong>19th Paradise Street Sitia<br>128 Meserole Avenue</strong></p>
-                <ul class="socials">
+                <img src="./img/decoration/divider-thin.svg" alt="decoration" class="divider-thin">
+                <p class="open-sans-footer-description"><strong>19th Paradise Street Sitia<br>128 Meserole Avenue</strong></p>
+                <ul class="our-location-socials">
                     <li class="hidden">social media links</li>
-                    <li><a href="#" aria-label="Facebook link" class="item"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#" aria-label="Youtube link" class="item"><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="#" aria-label="Twitter link" class="item"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#" aria-label="Trello link" class="item"><i class="fab fa-trello"></i></a></li>
+                    <li><a href="#" aria-label="Facebook link"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" aria-label="Youtube link"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#" aria-label="Twitter link"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" aria-label="Trello link"><i class="fab fa-trello"></i></a></li>
                 </ul>
             </li>
         </ul>

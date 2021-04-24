@@ -156,7 +156,6 @@ a {
     font-weight: lighter;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    text-align: left;
 }
 
 /* Header */
@@ -534,6 +533,16 @@ tbody {
     justify-content: center;
 }
 
+.reservations form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
 .reservations-images {
     padding: 0;
     margin: 0 100px 0 0;
@@ -583,6 +592,7 @@ tbody {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 .reservations-br {
@@ -597,8 +607,10 @@ input {
 }
 
 #date {
+    padding: 0 10px;
     display: block;
     height: 34px;
+    width: 164px;
     font-size: 16px;
     line-height: 1.5;
     color: rgba(124, 124, 124, 1);
@@ -668,15 +680,19 @@ input {
 }
 
 ::placeholder {
+    padding: 0 10px;
     font-size: 16px;
     line-height: 1.5;
     color: rgba(124, 124, 124, 1);
     font-weight: lighter;
     font-style: italic;
-    text-align: center;
     font-family: 'Open Sans', sans-serif;
-    text-align: left;
 }
+
+::-webkit-input-placeholder {padding: 0 10px;}
+::-moz-placeholder          {padding: 0 10px;}/* Firefox 19+ */
+:-moz-placeholder           {padding: 0 10px;}/* Firefox 18- */
+:-ms-input-placeholder      {padding: 0 10px;}
 
 .name-input {
     width: 188px;
@@ -695,10 +711,11 @@ button {
     line-height: 1.2;
     text-align: center;
     width: 195px;
-    height: 70px;
+    height: 40px;
 }
 
 #party-number {
+    padding: 0 10px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -713,92 +730,77 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 58px 0 53px 0;
+    padding: 52px 0 50px 0;
+}
+
+footer .divider-thin {
+    width: 247px;
+    height: 20px;
+    margin: 0 0 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.footer-headline {
+    margin: 0 0 20px 0;
 }
 
 .footer-list {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    list-style: none;
+    width: 1250px;
     display: flex;
     flex-direction: row;
-}
-
-.footer-list .item {
-    color: rgba(255, 255, 255, 1);
+    justify-content: space-around;
 }
 
 .about-us {
+    width: 370px;
     display: flex;
     flex-direction: column;
-    width: 33.33%;
-    padding: 0 0 0 162px;
-    margin: 0;
-}
-
-.about-us .footer-headline {
-    padding-left: 27px;
-    margin: 0;
-}
-
-.about-us p {
-    margin: 0;
-    padding: 52px 40px 0 64px;
-}
-
-.opening-hours {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 33.33%;
-    padding: 0 0 0 90px;
-}
-
-.opening-hours .footer-headline {
-    padding-left: 22px;
-    margin: 0;
-}
-
-.opening-hours p {
-    margin: 0;
-    padding-top: 53px;
-}
-
-.opening-hours-list {
-    padding-left: 44px;
-    padding-top: 51px;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
-.opening-hours .item {
-    text-decoration: none;
-    margin-right: 15px;
+.opening-hours {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opening-hours p {
+    margin: 0 0 50px 0;
+}
+
+.opening-hours-list {
+    padding: 0;
+    display: flex;
+}
+
+.opening-hours-list li {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    margin-right: 10px;
 }
 
 .our-location {
+    width: 230px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 33.33%;
-}
-
-.our-location span {
-    margin: 0 0 65px 0;
+    align-items: center;
 }
 
 .our-location p {
-    margin: 0 0 55px 0;
+    margin: 0 0 50px 0;
 }
 
-.our-location .socials {
-    margin: 0;
+.our-location-socials {
+    padding: 0;
+    display: flex;
 }
 
-.our-location .item {
-    margin: 0 10px 0 0;
+.our-location-socials li{
+    margin-right: 10px;
 }
