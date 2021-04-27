@@ -227,13 +227,13 @@
                             <div class="date-input">
                                 <i class="fas fa-calendar-alt"></i>
                                 <label for="date" class="open-sans">Date</label>
-                                <input type="date" name="date" id="date" required>
+                                <input name="date" id="date" required placeholder="date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')">
                             </div>
                            <div class="number-input">
                                 <i class="fas fa-chevron-down"></i>
                                <label for="party-number" class="open-sans">Party number</label>
                                <select name="party number" id="party-number">
-                                   <option value="" disabled selected>Party number</option>
+                                   <option value="" disabled selected hidden>Party number</option>
                                    <option value="1">1</option>
                                    <option value="2">2</option>
                                 </select>

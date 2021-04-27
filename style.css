@@ -608,6 +608,15 @@ input {
     height: 32px;
 }
 
+input:focus {
+    outline-color: rgba(200, 159, 45, 1);
+}
+
+:-moz-focusring {
+    outline-offset: -1px;
+    outline: rgba(200, 159, 45, 1) solid 2px;
+}
+
 #date {
     padding: 2px 10px;
     display: block;
@@ -642,6 +651,7 @@ input {
     right: 10px;
     bottom: 10px;
 }
+
 #party-number {
     width: 200px;
     height: 32px;
@@ -653,6 +663,26 @@ input {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     text-align: left;
+}
+
+@-moz-document url-prefix() {
+    #party-number {
+        box-shadow: 0;
+        color: rgba(124, 124, 124, 0.5);
+    }
+
+    #party-number:focus {
+        outline-offset: -2px;
+        outline: rgba(200, 159, 45, 1) solid 2px;
+    }
+
+    #party-number option {
+        color: rgba(124, 124, 124, 1);
+    }
+  }
+
+#party-number:focus {
+    outline-color: rgba(200, 159, 45, 1);
 }
 
 .name-email {
